@@ -3,31 +3,32 @@
 \citation{liu2012feature}
 \citation{liang2018review}
 \citation{speed2003statistical}
-\citation{ding2005minimum}
 \citation{ding2015identification}
 \citation{sun2018cross}
-\citation{rau2019exploring}
 \citation{jeong2018feature}
 \citation{xue2012particle}
 \citation{wu2011feature}
 \citation{kabir2012new}
 \citation{tibshirani1996regression}
-\citation{abdullah2019,guyon2002gene,fang2019tightly}
-\citation{pouyan2018random,ram2017classification}
+\citation{abdullah2019}
+\citation{guyon2002gene}
+\citation{fang2019tightly}
+\citation{pouyan2018random}
+\citation{ram2017classification}
 \citation{wang2012adaboost}
 \citation{le2019statistical}
 \citation{lu2019autoencoder}
-\newcplabel{^_1}{1}
+\newlabel{^_1}{{}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \newlabel{intro}{{1}{1}}
 \citation{hotelling1933analysis}
 \citation{hinton2006reducing}
-\citation{maddison2016concrete,kingma2013auto}
+\citation{maddison2016concrete}
+\citation{kingma2013auto}
 \citation{abid2019concrete}
 \citation{harrow2006gencode}
 \citation{li2015tanric}
 \citation{hinton2006reducing}
-\citation{maddison2016concrete}
 \citation{jang2016categorical}
 \citation{gumbel1954statistical}
 \citation{kingma2013auto}
@@ -35,18 +36,18 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {{2.1}}Coding and Non-coding Gene Expression}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{2.2}}Concrete Relaxation Autoencoder}{2}}
 \newlabel{CoRAE}{{{2.2}}{2}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces  \textbf  {Sample Distribution for 33 cancers along with 75-25 split for training and testing.} }}{3}}
+\newlabel{Tab:01}{{1}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$. During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidde n node. The architecture of the decoder remains the same during train and test stage.}}{3}}
+\newlabel{fig:architecture}{{1}{3}}
 \citation{scikit-learn}
 \citation{tensorflow2015-whitepaper}
 \citation{chollet2015keras}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Data description}}{3}}
-\newlabel{Tab:01}{{1}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}Gene Selection, Classification, Reconstruction, and Evaluation}{3}}
-\newlabel{method-details}{{{2.3}}{3}}
 \citation{maaten2008visualizing}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture is consists of a encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has k number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $u^{(i)}$ takes the value $x^Tm^{(i)}$. During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node. The architecture of the decoder remains the same during train and test stage.}}{4}}
-\newlabel{fig:architecture}{{1}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Annealing schedules for the CoRAE.} Here, we show the effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. At each epoch, we plot the temperature in brown. If the temperature is exponentially decayed (the annealing schedule we use), the samples converge to informative features.}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}}{4}}
 \newlabel{fig:temp}{{2}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}Gene Selection, Classification, Reconstruction, and Evaluation}{4}}
+\newlabel{method-details}{{{2.3}}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Classification performance using selected RNA features.} Comparison of CoRAE with other feature selection methods. Througout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classifcation accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}}{5}}
 \newlabel{fig:acc-mse}{{3}{5}}
@@ -55,43 +56,41 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Interpreting Related Features}{5}}
 \newlabel{inter}{{{3.1}}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{5}}
-\bibstyle{natbib}
+\bibstyle{bioinformatics}
 \bibdata{document}
-\bibcite{tensorflow2015-whitepaper}{{1}{2015}{{Abadi {\em  et~al.}}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia, Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah, Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan, Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}}}
-\bibcite{abdullah2019}{{2}{2019}{{Abdullah}}{{Abdullah}}}
-\bibcite{abid2019concrete}{{3}{2019}{{Abid {\em  et~al.}}}{{Abid, Balin, and Zou}}}
-\bibcite{chollet2015keras}{{4}{2015}{{Chollet {\em  et~al.}}}{{Chollet {\em  et~al.}}}}
-\bibcite{ding2005minimum}{{5}{2005}{{Ding and Peng}}{{Ding and Peng}}}
-\bibcite{ding2015identification}{{6}{2015}{{Ding and Li}}{{Ding and Li}}}
-\bibcite{fang2019tightly}{{7}{2019}{{Fang}}{{Fang}}}
-\bibcite{gumbel1954statistical}{{8}{1954}{{Gumbel}}{{Gumbel}}}
-\bibcite{guyon2002gene}{{9}{2002}{{Guyon {\em  et~al.}}}{{Guyon, Weston, Barnhill, and Vapnik}}}
-\bibcite{harrow2006gencode}{{10}{2006}{{Harrow {\em  et~al.}}}{{Harrow, Denoeud, Frankish, Reymond, Chen, Chrast, Lagarde, Gilbert, Storey, Swarbreck, {\em  et~al.}}}}
-\bibcite{hinton2006reducing}{{11}{2006}{{Hinton and Salakhutdinov}}{{Hinton and Salakhutdinov}}}
-\bibcite{hotelling1933analysis}{{12}{1933}{{Hotelling}}{{Hotelling}}}
-\bibcite{jang2016categorical}{{13}{2016}{{Jang {\em  et~al.}}}{{Jang, Gu, and Poole}}}
-\bibcite{jeong2018feature}{{14}{2018}{{Jeong {\em  et~al.}}}{{Jeong, Kim, Kim, Lee, Kim, and Kang}}}
-\bibcite{kabir2012new}{{15}{2012}{{Kabir {\em  et~al.}}}{{Kabir, Shahjahan, and Murase}}}
-\bibcite{kingma2013auto}{{16}{2013}{{Kingma and Welling}}{{Kingma and Welling}}}
-\bibcite{le2019statistical}{{17}{2019}{{Le {\em  et~al.}}}{{Le, Urbanowicz, Moore, and McKinney}}}
-\bibcite{li2015tanric}{{18}{2015}{{Li {\em  et~al.}}}{{Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and Liang}}}
-\bibcite{liang2018review}{{19}{2018}{{Liang {\em  et~al.}}}{{Liang, Ma, Yang, Wang, and Ma}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}}{6}}
-\newlabel{fig:tsne}{{5}{6}}
+\bibcite{tensorflow2015-whitepaper}{{1}{2015}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia, Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah, Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan, Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}}}
+\bibcite{abdullah2019}{{2}{2019}{{Abdullah}}{{}}}
+\bibcite{abid2019concrete}{{3}{2019}{{Abid et~al.}}{{Abid, Balin, and Zou}}}
+\bibcite{chollet2015keras}{{4}{2015}{{Chollet et~al.}}{{}}}
+\bibcite{ding2005minimum}{{5}{2005}{{Ding and Peng}}{{}}}
+\bibcite{ding2015identification}{{6}{2015}{{Ding and Li}}{{}}}
+\bibcite{fang2019tightly}{{7}{2019}{{Fang}}{{}}}
+\bibcite{gumbel1954statistical}{{8}{1954}{{Gumbel}}{{}}}
+\bibcite{guyon2002gene}{{9}{2002}{{Guyon et~al.}}{{Guyon, Weston, Barnhill, and Vapnik}}}
+\bibcite{harrow2006gencode}{{10}{2006}{{Harrow et~al.}}{{Harrow, Denoeud, Frankish, Reymond, Chen, Chrast, Lagarde, Gilbert, Storey, Swarbreck, et~al.}}}
+\bibcite{hinton2006reducing}{{11}{2006}{{Hinton and Salakhutdinov}}{{}}}
+\bibcite{hotelling1933analysis}{{12}{1933}{{Hotelling}}{{}}}
+\bibcite{jang2016categorical}{{13}{2016}{{Jang et~al.}}{{Jang, Gu, and Poole}}}
+\bibcite{jeong2018feature}{{14}{2018}{{Jeong et~al.}}{{Jeong, Kim, Kim, Lee, Kim, and Kang}}}
+\bibcite{kabir2012new}{{15}{2012}{{Kabir et~al.}}{{Kabir, Shahjahan, and Murase}}}
+\bibcite{kingma2013auto}{{16}{2013}{{Kingma and Welling}}{{}}}
+\bibcite{le2019statistical}{{17}{2019}{{Le et~al.}}{{Le, Urbanowicz, Moore, and McKinney}}}
+\bibcite{li2015tanric}{{18}{2015}{{Li et~al.}}{{Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and Liang}}}
+\bibcite{liang2018review}{{19}{2018}{{Liang et~al.}}{{Liang, Ma, Yang, Wang, and Ma}}}
+\bibcite{liu2012feature}{{20}{2012}{{Liu and Motoda}}{{}}}
+\bibcite{lu2019autoencoder}{{21}{2019}{{Lu et~al.}}{{Lu, Gu, Wang, Wang, and Qin}}}
+\bibcite{maaten2008visualizing}{{22}{2008}{{Maaten and Hinton}}{{}}}
+\bibcite{maddison2016concrete}{{23}{2016}{{Maddison et~al.}}{{Maddison, Mnih, and Teh}}}
+\bibcite{scikit-learn}{{24}{2011}{{Pedregosa et~al.}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay}}}
+\bibcite{pirgazi2019efficient}{{25}{2019}{{Pirgazi et~al.}}{{Pirgazi, Alimoradi, Abharian, and Olyaee}}}
+\bibcite{pouyan2018random}{{26}{2018}{{Pouyan and Kostka}}{{}}}
+\bibcite{ram2017classification}{{27}{2017}{{Ram et~al.}}{{Ram, Najafi, and Shakeri}}}
+\bibcite{rau2019exploring}{{28}{2019}{{Rau et~al.}}{{Rau, Flister, Rui, and Auer}}}
+\bibcite{speed2003statistical}{{29}{2003}{{Speed}}{{}}}
+\bibcite{sun2018cross}{{30}{2018}{{Sun et~al.}}{{Sun, Lu, and Li}}}
+\bibcite{tibshirani1996regression}{{31}{1996}{{Tibshirani}}{{}}}
+\bibcite{wang2012adaboost}{{32}{2012}{{Wang}}{{}}}
+\bibcite{wu2011feature}{{33}{2011}{{Wu et~al.}}{{Wu, Tang, Hor, and Wu}}}
+\bibcite{xue2012particle}{{34}{2012}{{Xue et~al.}}{{Xue, Zhang, and Browne}}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{6}}
-\bibcite{liu2012feature}{{20}{2012}{{Liu and Motoda}}{{Liu and Motoda}}}
-\bibcite{lu2019autoencoder}{{21}{2019}{{Lu {\em  et~al.}}}{{Lu, Gu, Wang, Wang, and Qin}}}
-\bibcite{maaten2008visualizing}{{22}{2008}{{Maaten and Hinton}}{{Maaten and Hinton}}}
-\bibcite{maddison2016concrete}{{23}{2016}{{Maddison {\em  et~al.}}}{{Maddison, Mnih, and Teh}}}
-\bibcite{scikit-learn}{{24}{2011}{{Pedregosa {\em  et~al.}}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay}}}
-\bibcite{pirgazi2019efficient}{{25}{2019}{{Pirgazi {\em  et~al.}}}{{Pirgazi, Alimoradi, Abharian, and Olyaee}}}
-\bibcite{pouyan2018random}{{26}{2018}{{Pouyan and Kostka}}{{Pouyan and Kostka}}}
-\bibcite{ram2017classification}{{27}{2017}{{Ram {\em  et~al.}}}{{Ram, Najafi, and Shakeri}}}
-\bibcite{rau2019exploring}{{28}{2019}{{Rau {\em  et~al.}}}{{Rau, Flister, Rui, and Auer}}}
-\bibcite{speed2003statistical}{{29}{2003}{{Speed}}{{Speed}}}
-\bibcite{sun2018cross}{{30}{2018}{{Sun {\em  et~al.}}}{{Sun, Lu, and Li}}}
-\bibcite{tibshirani1996regression}{{31}{1996}{{Tibshirani}}{{Tibshirani}}}
-\bibcite{wang2012adaboost}{{32}{2012}{{Wang}}{{Wang}}}
-\bibcite{wu2011feature}{{33}{2011}{{Wu {\em  et~al.}}}{{Wu, Tang, Hor, and Wu}}}
-\bibcite{xue2012particle}{{34}{2012}{{Xue {\em  et~al.}}}{{Xue, Zhang, and Browne}}}
 \global\@namedef{@lastpage@}{7}
