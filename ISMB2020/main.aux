@@ -20,14 +20,14 @@
 \citation{wang2012adaboost}
 \citation{le2019statistical}
 \citation{lu2019autoencoder}
-\newlabel{^_1}{{}{1}}
-\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
-\newlabel{intro}{{1}{1}}
 \citation{hotelling1933analysis}
 \citation{hinton2006reducing}
 \citation{maddison2016concrete}
 \citation{kingma2013auto}
 \citation{abid2019concrete}
+\newlabel{^_1}{{}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{intro}{{1}{1}}
 \citation{harrow2006gencode}
 \citation{li2015tanric}
 \citation{hinton2006reducing}
@@ -39,29 +39,24 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {{2.1}}Coding and Non-coding Gene Expression}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{2.2}}Concrete Relaxation Autoencoder}{2}}
 \newlabel{CoRAE}{{{2.2}}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}Gene Selection, Classification, Reconstruction, and Evaluation}{2}}
+\newlabel{method-details}{{{2.3}}{2}}
+\citation{scikit-learn}
+\citation{tensorflow2015-whitepaper}
+\citation{chollet2015keras}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces  \textbf  {Sample Distribution for 33 cancers along with 75-25 split for training and testing.} }}{3}}
 \newlabel{Tab:01}{{1}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$. During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidde n node. The architecture of the decoder remains the same during train and test stage.}}{3}}
 \newlabel{fig:architecture}{{1}{3}}
-\citation{scikit-learn}
-\citation{tensorflow2015-whitepaper}
-\citation{chollet2015keras}
 \citation{maaten2008visualizing}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}}{4}}
-\newlabel{fig:temp}{{2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}Gene Selection, Classification, Reconstruction, and Evaluation}{4}}
-\newlabel{method-details}{{{2.3}}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Classification performance using selected RNA features.} Comparison of CoRAE with other feature selection methods. Througout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classifcation accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}}{5}}
-\newlabel{fig:acc-mse}{{3}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Interpreting Related Features}{5}}
-\newlabel{inter}{{{3.1}}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}}{5}}
-\newlabel{fig:acc-mRNA-lncRNA}{{4}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{5}}
 \bibstyle{bioinformatics}
 \bibdata{document}
 \bibcite{tensorflow2015-whitepaper}{{1}{2015}{{Abadi et~al.}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia, Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah, Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan, Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Interpreting Related Features}{4}}
+\newlabel{inter}{{{3.1}}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{4}}
 \bibcite{abdullah2019}{{2}{2019}{{Abdullah}}{{}}}
 \bibcite{abid2019concrete}{{3}{2019}{{Abid et~al.}}{{Abid, Balin, and Zou}}}
 \bibcite{chollet2015keras}{{4}{2015}{{Chollet et~al.}}{{}}}
@@ -81,9 +76,6 @@
 \bibcite{li2015tanric}{{18}{2015}{{Li et~al.}}{{Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and Liang}}}
 \bibcite{liang2018review}{{19}{2018}{{Liang et~al.}}{{Liang, Ma, Yang, Wang, and Ma}}}
 \bibcite{liu2012feature}{{20}{2012}{{Liu and Motoda}}{{}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}}{6}}
-\newlabel{fig:tsne}{{5}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{6}}
 \bibcite{lu2019autoencoder}{{21}{2019}{{Lu et~al.}}{{Lu, Gu, Wang, Wang, and Qin}}}
 \bibcite{maaten2008visualizing}{{22}{2008}{{Maaten and Hinton}}{{}}}
 \bibcite{maddison2016concrete}{{23}{2016}{{Maddison et~al.}}{{Maddison, Mnih, and Teh}}}
@@ -98,4 +90,8 @@
 \bibcite{wang2012adaboost}{{32}{2012}{{Wang}}{{}}}
 \bibcite{wu2011feature}{{33}{2011}{{Wu et~al.}}{{Wu, Tang, Hor, and Wu}}}
 \bibcite{xue2012particle}{{34}{2012}{{Xue et~al.}}{{Xue, Zhang, and Browne}}}
-\global\@namedef{@lastpage@}{7}
+\global\@namedef{@lastpage@}{5}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Temperature Effect.} }}{6}}
+\newlabel{fig:temp-change}{{2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}}{6}}
+\newlabel{fig:temp}{{3}{6}}
