@@ -1,0 +1,223 @@
+\begin{thebibliography}{}
+
+\bibitem[Abadi {\em et~al.}(2015)Abadi, Agarwal, Barham, Brevdo, Chen, Citro,
+  Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia,
+  Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah,
+  Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan,
+  Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and
+  Zheng]{tensorflow2015-whitepaper}
+Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., Corrado,
+  G.~S., Davis, A., Dean, J., Devin, M., Ghemawat, S., Goodfellow, I., Harp,
+  A., Irving, G., Isard, M., Jia, Y., Jozefowicz, R., Kaiser, L., Kudlur, M.,
+  Levenberg, J., Man\'{e}, D., Monga, R., Moore, S., Murray, D., Olah, C.,
+  Schuster, M., Shlens, J., Steiner, B., Sutskever, I., Talwar, K., Tucker, P.,
+  Vanhoucke, V., Vasudevan, V., Vi\'{e}gas, F., Vinyals, O., Warden, P.,
+  Wattenberg, M., Wicke, M., Yu, Y., and Zheng, X. (2015).
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
+\newblock Software available from tensorflow.org.
+
+\bibitem[Abdullah(2019)Abdullah]{abdullah2019}
+Abdullah, Al~Mamun, A.~M. (2019).
+\newblock Feature selection and classification reveal key lncrnas for multiple
+  cancers.
+
+\bibitem[Abid {\em et~al.}(2019)Abid, Balin, and Zou]{abid2019concrete}
+Abid, A., Balin, M.~F., and Zou, J. (2019).
+\newblock Concrete autoencoders for differentiable feature selection and
+  reconstruction.
+\newblock {\em arXiv preprint arXiv:1901.09346\/}.
+
+\bibitem[Chollet {\em et~al.}(2015)Chollet {\em et~al.}]{chollet2015keras}
+Chollet, F. {\em et~al.} (2015).
+\newblock Keras.
+\newblock \url{https://github.com/fchollet/keras}.
+
+\bibitem[Ding and Peng(2005)Ding and Peng]{ding2005minimum}
+Ding, C. and Peng, H. (2005).
+\newblock Minimum redundancy feature selection from microarray gene expression
+  data.
+\newblock {\em Journal of bioinformatics and computational biology\/}, {\bf
+  3}(02), 185--205.
+
+\bibitem[Ding and Li(2015)Ding and Li]{ding2015identification}
+Ding, H. and Li, D. (2015).
+\newblock Identification of mitochondrial proteins of malaria parasite using
+  analysis of variance.
+\newblock {\em Amino acids\/}, {\bf 47}(2), 329--333.
+
+\bibitem[Fang(2019)Fang]{fang2019tightly}
+Fang, J. (2019).
+\newblock Tightly integrated genomic and epigenomic data mining using tensor
+  decomposition.
+\newblock {\em Bioinformatics\/}, {\bf 35}(1), 112--118.
+
+\bibitem[Gumbel(1954)Gumbel]{gumbel1954statistical}
+Gumbel, E.~J. (1954).
+\newblock Statistical theory of extreme values and some practical applications.
+\newblock {\em NBS Applied Mathematics Series\/}, {\bf 33}.
+
+\bibitem[Guyon {\em et~al.}(2002)Guyon, Weston, Barnhill, and
+  Vapnik]{guyon2002gene}
+Guyon, I., Weston, J., Barnhill, S., and Vapnik, V. (2002).
+\newblock Gene selection for cancer classification using support vector
+  machines.
+\newblock {\em Machine learning\/}, {\bf 46}(1-3), 389--422.
+
+\bibitem[Harrow {\em et~al.}(2006)Harrow, Denoeud, Frankish, Reymond, Chen,
+  Chrast, Lagarde, Gilbert, Storey, Swarbreck, {\em et~al.}]{harrow2006gencode}
+Harrow, J., Denoeud, F., Frankish, A., Reymond, A., Chen, C.-K., Chrast, J.,
+  Lagarde, J., Gilbert, J.~G., Storey, R., Swarbreck, D., {\em et~al.} (2006).
+\newblock Gencode: producing a reference annotation for encode.
+\newblock {\em Genome biology\/}, {\bf 7}(1), S4.
+
+\bibitem[Hinton and Salakhutdinov(2006)Hinton and
+  Salakhutdinov]{hinton2006reducing}
+Hinton, G.~E. and Salakhutdinov, R.~R. (2006).
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock {\em science\/}, {\bf 313}(5786), 504--507.
+
+\bibitem[Hotelling(1933)Hotelling]{hotelling1933analysis}
+Hotelling, H. (1933).
+\newblock Analysis of a complex of statistical variables into principal
+  components.
+\newblock {\em Journal of educational psychology\/}, {\bf 24}(6), 417.
+
+\bibitem[Jang {\em et~al.}(2016)Jang, Gu, and Poole]{jang2016categorical}
+Jang, E., Gu, S., and Poole, B. (2016).
+\newblock Categorical reparameterization with gumbel-softmax.
+\newblock {\em arXiv preprint arXiv:1611.01144\/}.
+
+\bibitem[Jeong {\em et~al.}(2018)Jeong, Kim, Kim, Lee, Kim, and
+  Kang]{jeong2018feature}
+Jeong, I.-S., Kim, H.-K., Kim, T.-H., Lee, D.~H., Kim, K.~J., and Kang, S.-H.
+  (2018).
+\newblock A feature selection approach based on simulated annealing for
+  detecting various denial of service attacks.
+\newblock {\em Software Networking\/}, {\bf 2018}(1), 173--190.
+
+\bibitem[Kabir {\em et~al.}(2012)Kabir, Shahjahan, and Murase]{kabir2012new}
+Kabir, M.~M., Shahjahan, M., and Murase, K. (2012).
+\newblock A new hybrid ant colony optimization algorithm for feature selection.
+\newblock {\em Expert Systems with Applications\/}, {\bf 39}(3), 3747--3763.
+
+\bibitem[Kingma and Welling(2013)Kingma and Welling]{kingma2013auto}
+Kingma, D.~P. and Welling, M. (2013).
+\newblock Auto-encoding variational bayes.
+\newblock {\em arXiv preprint arXiv:1312.6114\/}.
+
+\bibitem[Le {\em et~al.}(2019)Le, Urbanowicz, Moore, and
+  McKinney]{le2019statistical}
+Le, T.~T., Urbanowicz, R.~J., Moore, J.~H., and McKinney, B.~A. (2019).
+\newblock Statistical inference relief (stir) feature selection.
+\newblock {\em Bioinformatics\/}, {\bf 35}(8), 1358--1365.
+
+\bibitem[Li {\em et~al.}(2015)Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and
+  Liang]{li2015tanric}
+Li, J., Han, L., Roebuck, P., Diao, L., Liu, L., Yuan, Y., Weinstein, J.~N.,
+  and Liang, H. (2015).
+\newblock Tanric: an interactive open platform to explore the function of
+  lncrnas in cancer.
+\newblock {\em Cancer research\/}, {\bf 75}(18), 3728--3737.
+
+\bibitem[Liang {\em et~al.}(2018)Liang, Ma, Yang, Wang, and
+  Ma]{liang2018review}
+Liang, S., Ma, A., Yang, S., Wang, Y., and Ma, Q. (2018).
+\newblock A review of matched-pairs feature selection methods for gene
+  expression data analysis.
+\newblock {\em Computational and structural biotechnology journal\/}, {\bf 16},
+  88--97.
+
+\bibitem[Liu and Motoda(2012)Liu and Motoda]{liu2012feature}
+Liu, H. and Motoda, H. (2012).
+\newblock {\em Feature selection for knowledge discovery and data mining\/},
+  volume 454.
+\newblock Springer Science \& Business Media.
+
+\bibitem[Lu {\em et~al.}(2019)Lu, Gu, Wang, Wang, and Qin]{lu2019autoencoder}
+Lu, X., Gu, H., Wang, Y., Wang, J., and Qin, P. (2019).
+\newblock Autoencoder based feature selection method for classification of
+  anticancer drug response.
+\newblock {\em Frontiers in genetics\/}, {\bf 10}, 233.
+
+\bibitem[Maaten and Hinton(2008)Maaten and Hinton]{maaten2008visualizing}
+Maaten, L. v.~d. and Hinton, G. (2008).
+\newblock Visualizing data using t-sne.
+\newblock {\em Journal of machine learning research\/}, {\bf 9}(Nov),
+  2579--2605.
+
+\bibitem[Maddison {\em et~al.}(2016)Maddison, Mnih, and
+  Teh]{maddison2016concrete}
+Maddison, C.~J., Mnih, A., and Teh, Y.~W. (2016).
+\newblock The concrete distribution: A continuous relaxation of discrete random
+  variables.
+\newblock {\em arXiv preprint arXiv:1611.00712\/}.
+
+\bibitem[Pedregosa {\em et~al.}(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
+  Cournapeau, Brucher, Perrot, and Duchesnay]{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, E.
+  (2011).
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research\/}, {\bf 12}, 2825--2830.
+
+\bibitem[Pirgazi {\em et~al.}(2019)Pirgazi, Alimoradi, Abharian, and
+  Olyaee]{pirgazi2019efficient}
+Pirgazi, J., Alimoradi, M., Abharian, T.~E., and Olyaee, M.~H. (2019).
+\newblock An efficient hybrid filter-wrapper metaheuristic-based gene selection
+  method for high dimensional datasets.
+\newblock {\em Scientific Reports\/}, {\bf 9}(1), 1--15.
+
+\bibitem[Pouyan and Kostka(2018)Pouyan and Kostka]{pouyan2018random}
+Pouyan, M.~B. and Kostka, D. (2018).
+\newblock Random forest based similarity learning for single cell rna
+  sequencing data.
+\newblock {\em Bioinformatics\/}, {\bf 34}(13), i79--i88.
+
+\bibitem[Ram {\em et~al.}(2017)Ram, Najafi, and Shakeri]{ram2017classification}
+Ram, M., Najafi, A., and Shakeri, M.~T. (2017).
+\newblock Classification and biomarker genes selection for cancer gene
+  expression data using random forest.
+\newblock {\em Iranian journal of pathology\/}, {\bf 12}(4), 339.
+
+\bibitem[Rau {\em et~al.}(2019)Rau, Flister, Rui, and Auer]{rau2019exploring}
+Rau, A., Flister, M., Rui, H., and Auer, P.~L. (2019).
+\newblock Exploring drivers of gene expression in the cancer genome atlas.
+\newblock {\em Bioinformatics\/}, {\bf 35}(1), 62--68.
+
+\bibitem[Speed(2003)Speed]{speed2003statistical}
+Speed, T. (2003).
+\newblock {\em Statistical analysis of gene expression microarray data\/}.
+\newblock Chapman and Hall/CRC.
+
+\bibitem[Sun {\em et~al.}(2018)Sun, Lu, and Li]{sun2018cross}
+Sun, Y., Lu, C., and Li, X. (2018).
+\newblock The cross-entropy based multi-filter ensemble method for gene
+  selection.
+\newblock {\em Genes\/}, {\bf 9}(5), 258.
+
+\bibitem[Tibshirani(1996)Tibshirani]{tibshirani1996regression}
+Tibshirani, R. (1996).
+\newblock Regression shrinkage and selection via the lasso.
+\newblock {\em Journal of the Royal Statistical Society: Series B
+  (Methodological)\/}, {\bf 58}(1), 267--288.
+
+\bibitem[Wang(2012)Wang]{wang2012adaboost}
+Wang, R. (2012).
+\newblock Adaboost for feature selection, classification and its relation with
+  svm, a review.
+\newblock {\em Physics Procedia\/}, {\bf 25}, 800--807.
+
+\bibitem[Wu {\em et~al.}(2011)Wu, Tang, Hor, and Wu]{wu2011feature}
+Wu, Y.-L., Tang, C.-Y., Hor, M.-K., and Wu, P.-F. (2011).
+\newblock Feature selection using genetic algorithm and cluster validation.
+\newblock {\em Expert Systems with Applications\/}, {\bf 38}(3), 2727--2732.
+
+\bibitem[Xue {\em et~al.}(2012)Xue, Zhang, and Browne]{xue2012particle}
+Xue, B., Zhang, M., and Browne, W.~N. (2012).
+\newblock Particle swarm optimization for feature selection in classification:
+  A multi-objective approach.
+\newblock {\em IEEE transactions on cybernetics\/}, {\bf 43}(6), 1656--1671.
+
+\end{thebibliography}
