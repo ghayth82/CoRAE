@@ -179,12 +179,13 @@ and b) the number of genes should be as less as possible so that biologists can 
 easily. The capabilities of selected genes in pan-cancer classification is visually validated using unsupervised visualization technique t-SNE \citep{maaten2008visualizing}.
 
 %Survival analysis is conducted for testing the prognostic capabilities of selected gene set. 
-\begin{figure*}[bt]
+\begin{figure*}[hbt]
     \centering
     \includegraphics[scale=0.5]{fig/acc-mse.pdf}
     \caption{\textbf{Classification performance using selected RNA features.}  Comparison of CoRAE with other feature selection methods. Througout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classification accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}
     \label{fig:acc-mse}
-\end{figure*}
+  \end{figure*}
+  
 \section{Results}
 A series of experiments were conducted to compare the performance of CoRAE with other state-of-the-art feature selection methods such as LASSO and SVM-RFE.
 Each of these three methods were used to select features in the range of $10$ to $500$.
