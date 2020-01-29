@@ -178,16 +178,26 @@ easily. The capabilities of selected genes in pan-cancer classification is visua
 \begin{figure*}[bt]
     \centering
     \includegraphics[scale=0.5]{fig/acc-mse.pdf}
-    \caption{\textbf{Classification performance using selected RNA features.}  Comparison of CoRAE with other feature selection methods. Througout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classifcation accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}
+    \caption{\textbf{Classification performance using selected RNA features.}  Comparison of CoRAE with other feature selection methods. Througout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classification accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}
     \label{fig:acc-mse}
 \end{figure*}
 \section{Results}
-A series of experiements is conducted to compare the performance of CoRAE with other state-of-the-art feature selection methods such as LASSO and SVM-RFE. A range of features from 10 to 500 has been selected using all three methods, then train a linear classifier (SVM) using selected coding and non-coding gene expression of 33 cancer patients. Figure \ref{fig:acc-mse} shows the classification performance for different number of features. Across the all k, CoRAE has highest accuracy and lowest error for both mRNA and lncRNA expression. Even if the number of feature is low e.g. 10, the accuracy is almost 80\% whereas LASSO and SVM-RFE shows poor restuls for lowest number of feature. For more than 50 features, CoRAE shows more than 90\% accuracy. Also, it shows less error with less number of features compare to other methods. 
-For mRNA, CoRAE starts with MSE of 38 and quickly recduced to less than 10 within top 100 features. 
-The behaviour in classification is almost similar in both coding and non-coding genes. However, mRNA expression performs slightly better than lncRNA which as shown in Figure  \ref{fig:acc-mRNA-lncRNA}.
+A series of experiments were conducted to compare the performance of CoRAE with other state-of-the-art feature selection methods such as LASSO and SVM-RFE.
+Each of these three methods were used to select features in the range of $10$ to $500$.
+These features are then used to train a linear classifier (SVM) using selected coding and non-coding gene expression of $33$ cancer patients. 
+Figure~\ref{fig:acc-mse} showcases the selected features. It can be observed that the scale used in the x-axis to depict the number of features does not increase with a consistent step size.
+The initial stages of the experiments were performed with a smaller subset of the selected features as we wanted to understand the performance of the models being compared.
+The optimal classification performance was observed when $100$ features were used.
+Beyond this the trend continues as shown in the figure. We continued to monitor the performance of the models till $500$ features to check for the best possible performance. 
 
-\subsection{Interpreting Related Features} \label{inter}
-CoRAE not only able to identify important features but also allows the user to examine relevance by observing the estimated concrete parameter $\alpha^{(i)}$ for each feature. Since CoRAE selects a feature based on the value of vector $\alpha^{(i)}$, the user can check the importance of each feature and find the correlation with others.  In Figure \ref{fig:tsne}, it is visually revealed that the top 100 mRNA or lncRNA is capable of distinguishing 33 cancer types. Also, it is noticeable that the feature selected by CoRAE is carrying more information than among all other features. Thus, influential features are selected in proposed method.
+For all selected $k$ number of features, as depicted in Figure~\ref{fig:acc-mse}, CoRAE has highest accuracy and lowest error for both the mRNA and lncRNA expression.
+It can be observed that even with a smaller number of significant features (say $100$), the accuracy of CoRAE is close to 80\% whereas LASSO and SVM-RFE shows poor results for the same number of features.
+When the number of features is increased to a value of $50$, CoRAE outperforms the other compared methods to provide an accuracy $> 90\%$.
+
+The CoRAE method is resilient to errors that occur during reconstruction using a small feature set. In comparison, this error is more pronounced in the other competing methods.
+In specific, for the case considering mRNA, CoRAE starts with a MSE of $38$ and quickly reduces to a value less than $10$ within the use of the top $100$ features. 
+The behaviour in classification is highly comparable in both coding and non-coding genes.
+However, mRNA expression performs slightly better than lncRNA as shown in Figure~\ref{fig:acc-mRNA-lncRNA}.
  
 \begin{figure}[hbt]
     \centering
@@ -196,29 +206,59 @@ CoRAE not only able to identify important features but also allows the user to e
     \label{fig:acc-mRNA-lncRNA}
 \end{figure}
 
-\section{Discussion}
-In this research, a new differentiable feature selection method via backpropagation is proposed. In brief, the concrete relaxation autoencoder used reparameterization and concrete random variable technique to allow gradients to pass through a layer that stochastically selects discrete original input features. This randomness of the proposed method enables it to effectively search and converge to a user-defined number of original features which maximizing the objective function and minimizing the loss as discussed in section \ref{CoRAE}. The estimated parameters learned by the models can be further examined by the biologists to interpret biological relevance as discussed in section \ref{inter}. This made CoRAE distinctive from numerous competing approaches based on regularization. 
+\subsection{Selected Features Interpretation} \label{inter}
+With the use of CoRAE, we are able to identify important features while allowing the user to examine the relevance of each feature by observing the corresponding estimated concrete parameter $\alpha^{(i)}$.
+In CoRAE, feature selection is based on the value of vector $\alpha^{(i)}$ which gives the user the value of the importance score which in turn gives the power to identify features and based on their correlation with the other selected features. 
+Figure \ref{fig:tsne}, highlights how the top $100$ mRNA or lncRNA selected using the CoRAE is capable of distinguishing the $33$ cancer types. 
+It can also be observed that the  features selected using the CoRAE method carries more information than the ones selected by the other methods.
+The use of such features improves the prediction accuracy.
+The improved performance is highlighted in Figures~\ref{fig:acc-mse, fig:acc-mRNA-lncRNA, fig:tsne} with the CoRAE method succeeding in picking more significant features in comparison to the other state-of-the-art methods.
 
-It is shown via several experiments on publicly available gene expression cancer datasets that CoRAE efficiently maximizes the classification accuracy and minimizes the reconstruction error using a selected subset of genes.  For both datasets mRNA and lncRNA gene expression, CoRAE outperformed several sophisticated feature selection techniques. This phenomena still remain and minimizes the reconstruction error when only a single hidden layer is used in the decoder.  It indicates the power of CoRAE in selecting features from a large dataset. 
+
+
+\section{Discussion}
+In this paper, a new differentiable feature selection method via backpropagation is proposed.
+The proposed concrete relaxation auto-encoder uses re-parameterization and concrete random variable technique to allow gradients to pass through a layer that stochastically selects discrete original input features of higher significance.
+The randomness of the proposed method enables it to effectively search and converge to a user-defined number of original features which maximizing the objective function and minimizing the loss as discussed in section \ref{CoRAE}.
+The estimated parameters learned by the models can be further examined by the biologists and other stakeholders to interpret biological relevance as discussed in section \ref{inter}.
+The above mentioned characteristics of CoRAE provides it with a distinction from numerous other competing approaches which are based on regularization. 
 
 \begin{figure*}[bt]
-    \centering
-    \includegraphics[scale=0.45]{fig/tSNE.pdf}
+  \centering
+  \includegraphics[scale=0.45]{fig/tSNE.pdf}
     \caption{\textbf{Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}
     \label{fig:tsne}
 \end{figure*}
 
-Since CoRAE is built on standard autoencoder architecture, it is easily scalable to the higher number of samples or dimensions as discussed in section \ref{methods-details} where the features selected by the CoRAE outperformed the competing methods. Moreover, as CoRAE proposed in its generic form, it can be surely prolonged in several fashions. For example, unlike multiple cancer classification, important genes can be extracted during the molecular subtype classification of a single cancer dataset. Also, It allows users to integrate multi-omics data such as gene, protein, RNAseq expression, DNA methylation, copy number and so on. 
-CoRAE is easy to use and it requires only a few lines of modification in implementing it in the popular machine learning algorithm. Moreover, the runtime and space complexity is similar to that of the standard autoencoder. In addition, it enhances parallelization and hardware acceleration which is an obvious demand for deep learning.  Starting and ending temperature are the only added hyperparameters used for annealing schedule. The default value used in the experiment is found well enough for the various datasets.
+Since CoRAE is built on top of a standard autoencoder architecture, it is easily scalable to a higher number of samples or dimensions.
+It is observed that the features selected by the CoRAE outperformed the ones from the competing methods.
+This paper accounts for a generalized approach of CoRAE. However, there are other avenues that can be explored using the proposed method.
+As an example, CoRAE can be used to extract important genes during the molecular subtype classification of a single cancer dataset unlike the existing approaches which are based on the multiple cancer classification.
+The proposed method also provides the privilege to users to integrate multi-omics data such as gene, protein, RNAseq expression, DNA methylation, copy number and so on. 
+
+CoRAE is easy to use and requires modifying a few lines for implementing it in the popular machine learning frameworks.
+Moreover, the runtime and space complexity is similar to that of the standard autoencoder.
+In addition, it enhances parallelization and hardware acceleration which is an obvious demand for deep learning.
+Starting and ending temperature are the only added hyperparameters used for annealing schedule.
+The default values used in the experiment are carefully identified and is found to work adequately for the various datasets.
 
 \section{Conclusion}
-future work: we will conduct more biological validation in our extended work such as survival analysis of 33 cancer patients using selected features to measure the prognostic capabilities. Similarly, pathway analysis of selected coding and non-coding genes will be analyzed in future work as well.
+In this paper, we propose a novel feature subset selection method that increases the power of a standard deep autoencoder for differentiable feature selection. 
+The proposed CoRAE is a new variant of the standard autoencoder which uses a concrete relaxation discrete random variable selection layer for encoding allowing selection of user-defined number of original features
+By modifying the codebase of a standard autoencoder, we are able to successfully realize the proposed CoRAE method.
+We evaluate the performance of the proposed approach on coding and non-coding gene expression datasets and compare the results with state-of-the-art methods like LASSO and SVM-RFE.
+Our experiments show that on publicly available gene expression cancer datasets that CoRAE efficiently maximizes the classification accuracy and minimizes the reconstruction error using a selected subset of genes.
+For both mRNA and lncRNA gene expression datasets, CoRAE outperformed several sophisticated feature selection techniques.
+Use of a single hidden layer in the decoder, minimizes the reconstruction error and allows for selection of features from large datasets.
+
+As a part of the future work, we will conduct more biological validation such as survival analysis of 33 cancer patients using selected features to measure the prognostic capabilities.
+Similarly, pathway analysis of selected coding and non-coding genes will be analyzed in the future.
 
 \section*{Acknowledgements}
 
 
-\section*{Funding}
-This research is partially funded by NSF CAREER award \#1651917 (transferred to \#1901628) to AMM.
+% \section*{Funding}
+This research is partially funded by the US National Science Foundation CAREER award \#1651917 (transferred to \#1901628) to AMM.
 
 %\bibliographystyle{natbib}
 %\bibliographystyle{achemnat}
