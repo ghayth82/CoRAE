@@ -58,7 +58,7 @@ In this paper, a novel feature subset selection method that increases the power 
 We have tested our end-to-end model on coding and non-coding gene expression dataset and it outperforms state-of-the-art feature selection techniques. 
 
 \begin{table*}[h!]
-\processtable{Data description\label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Short	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Short	&	\#Sample	&	\#Train	&	\#Test\\\midrule
+\processtable{ \textbf{Sample Distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Short	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Short	&	\#Sample	&	\#Train	&	\#Test\\\midrule
 
 1	&	Adrenocortical Cancer	&	ACC	&	77	&	57	&	20	&	18	&	Lung Squamous Cell Carcinoma	&	LUSC	&	498	&	373	&	125	\\
 2	&	Bladder Cancer	&	BLCA	&	407	&	305	&	102	&	19	&	Mesothelioma	&	MESO	&	86	&	64	&	22	\\
@@ -124,8 +124,9 @@ The advantage of using a concrete random discrete variable is that it is differe
 \begin{figure*}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/architecture.pdf}
-    \caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture is consists of a encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has k number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $u^{(i)}$ takes the value $x^Tm^{(i)}$.
-During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node.
+    \caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tm^{(i)}$.
+During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidde
+n node.
 The architecture of the decoder remains the same during train and test stage.}
     \label{fig:architecture}
 \end{figure*}
