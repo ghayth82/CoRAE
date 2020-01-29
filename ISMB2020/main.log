@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 JAN 2020 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  29 JAN 2020 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -317,7 +317,10 @@ Package: natbib 2000/07/24 7.0a (PWD)
 LaTeX Info: Redefining \cite on input line 508.
 \c@NAT@ctr=\count105
 ))
-(./algorithm2e.sty
+(./url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+) (./algorithm2e.sty
 Package: algorithm2e 2005/10/04 v3.9 algorithms environments
 \c@AlgoLine=\count106
 
@@ -356,20 +359,20 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -590,15 +593,10 @@ LaTeX Font Warning: Font shape `LY1/phb/bx/n' undefined
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \hbox (badness 2005) in paragraph at lines 94--95
-\LY1/ptm/m/n/8 autoencoder AE (Hinton and Salakhutdinov, 2006) for dimension
- []
-
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 102.
+(Font)              Font shape `LY1/ptm/b/n' tried instead on input line 119.
 LaTeX Font Info:    Font shape `LY1/phv/m/it' in size <8> not available
-(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 109.
+(Font)              Font shape `LY1/phv/m/sl' tried instead on input line 126.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
@@ -608,46 +606,49 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 <fig/architecture.pdf, id=29, 696.6025pt x 432.61626pt>
 File: fig/architecture.pdf Graphic file (type pdf)
 <use fig/architecture.pdf>
-Package pdftex.def Info: fig/architecture.pdf  used on input line 117.
+Package pdftex.def Info: fig/architecture.pdf  used on input line 134.
 (pdftex.def)             Requested size: 348.3004pt x 216.3076pt.
 LaTeX Font Info:    Font shape `LY1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `LY1/phv/b/n' tried instead on input line 121.
-LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 121.
+(Font)              Font shape `LY1/phv/b/n' tried instead on input line 137.
+LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 137.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.54997> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.25> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 121.
+(Font)              size <5> substituted on input line 137.
 
 <fig/temp-change.pdf, id=30, 366.36874pt x 534.99875pt>
 File: fig/temp-change.pdf Graphic file (type pdf)
 <use fig/temp-change.pdf>
-Package pdftex.def Info: fig/temp-change.pdf  used on input line 127.
+Package pdftex.def Info: fig/temp-change.pdf  used on input line 143.
 (pdftex.def)             Requested size: 183.18391pt x 267.49872pt.
 <fig/temp-epoch-mRNA.pdf, id=31, 440.64626pt x 396.48125pt>
 File: fig/temp-epoch-mRNA.pdf Graphic file (type pdf)
 <use fig/temp-epoch-mRNA.pdf>
-Package pdftex.def Info: fig/temp-epoch-mRNA.pdf  used on input line 141.
+Package pdftex.def Info: fig/temp-epoch-mRNA.pdf  used on input line 158.
 (pdftex.def)             Requested size: 220.32259pt x 198.24013pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -657,6 +658,9 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
  []
@@ -665,44 +669,44 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
 <fig/acc-mse.pdf, id=96, 825.0825pt x 544.0325pt>
 File: fig/acc-mse.pdf Graphic file (type pdf)
 <use fig/acc-mse.pdf>
-Package pdftex.def Info: fig/acc-mse.pdf  used on input line 184.
+Package pdftex.def Info: fig/acc-mse.pdf  used on input line 214.
 (pdftex.def)             Requested size: 412.54024pt x 272.01558pt.
 
 
-LaTeX Warning: Reference `fig:acc-mse' on page 5 undefined on input line 193.
+LaTeX Warning: Reference `fig:acc-mse' on page 5 undefined on input line 223.
 
 
-LaTeX Warning: Reference `fig:acc-mse' on page 5 undefined on input line 198.
+LaTeX Warning: Reference `fig:acc-mse' on page 5 undefined on input line 228.
 
 
 LaTeX Warning: Reference `fig:acc-mRNA-lncRNA' on page 5 undefined on input lin
-e 205.
+e 235.
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 202--206
+Underfull \hbox (badness 2941) in paragraph at lines 232--236
 []\LY1/ptm/m/n/8 The CoRAE method is resilient to errors that occur during
  []
 
 <fig/acc-mRNA-lncRNA.pdf, id=97, 459.7175pt x 336.25626pt>
 File: fig/acc-mRNA-lncRNA.pdf Graphic file (type pdf)
 <use fig/acc-mRNA-lncRNA.pdf>
-Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf  used on input line 209.
+Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf  used on input line 239.
 (pdftex.def)             Requested size: 206.87096pt x 151.3139pt.
 
-Underfull \hbox (badness 1460) in paragraph at lines 210--210
+Underfull \hbox (badness 1460) in paragraph at lines 240--240
 [][] \LY1/phb/bx/n/6.5 Classification accuracy comparison between coding and no
 n-coding genes
  []
 
 
-LaTeX Warning: Reference `fig:tsne' on page 5 undefined on input line 217.
+LaTeX Warning: Reference `fig:tsne' on page 5 undefined on input line 247.
 
 
 LaTeX Warning: Reference `fig:acc-mse, fig:acc-mRNA-lncRNA, fig:tsne' on page 5
- undefined on input line 220.
+ undefined on input line 250.
 
 
-Underfull \hbox (badness 2245) in paragraph at lines 225--230
+Underfull \hbox (badness 2245) in paragraph at lines 255--260
 \LY1/ptm/m/n/8 In this paper, a new differentiable feature selection method via
 
  []
@@ -710,10 +714,10 @@ Underfull \hbox (badness 2245) in paragraph at lines 225--230
 <fig/tSNE.pdf, id=98, 1001.7425pt x 465.74pt>
 File: fig/tSNE.pdf Graphic file (type pdf)
 <use fig/tSNE.pdf>
-Package pdftex.def Info: fig/tSNE.pdf  used on input line 233.
+Package pdftex.def Info: fig/tSNE.pdf  used on input line 263.
 (pdftex.def)             Requested size: 450.77995pt x 209.58105pt.
 
-Underfull \hbox (badness 1237) in paragraph at lines 244--249
+Underfull \hbox (badness 1237) in paragraph at lines 274--279
 \LY1/ptm/m/n/8 autoencoder. In addition, it enhances parallelization and hardwa
 re
  []
@@ -724,15 +728,10 @@ Overfull \hbox (252.0pt too wide) has occurred while \output is active
  []
 
 [5] (./main.bbl
-! Undefined control sequence.
-l.33 \newblock \url
-                   {https://github.com/fchollet/keras}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+LaTeX Font Info:    Try loading font information for LY1+pcr on input line 33.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/ly1/ly1pcr.fd
+File: ly1pcr.fd 2001/02/01 font definitions for LY1/pcr using Berry names.
+)
 LaTeX Font Info:    Font shape `LY1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `LY1/ptm/b/n' tried instead on input line 39.
 
@@ -744,42 +743,22 @@ e
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.0pt when 457.25949pt
+Extra height:28.0pt when 479.2175pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.0pt when 458.25949pt
+Extra height:28.0pt when 480.2175pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:28.0pt when 459.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.0pt when 460.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.0pt when 461.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:28.0pt when 462.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 463.25949pt
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Extra height:10.0pt when 464.25949pt
-Extra height:0.0pt when 465.25949pt
-(2)Left:465.25949pt Right:453.519pt Output:465.25949pt
+Extra height:28.0pt when 481.2175pt
+Extra height:0.0pt when 482.2175pt
+(2)Left:482.2175pt Right:480.435pt Output:482.2175pt
 - LAST -
 Extra skip:0.0pt
-Left:465.25949pt
-Right:453.519pt
-Output:465.25949pt
+Left:482.2175pt
+Right:480.435pt
+Output:482.2175pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -809,13 +788,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4711 strings out of 492649
- 59498 string characters out of 6129622
- 187814 words of memory out of 5000000
- 8488 multiletter control sequences out of 15000+600000
- 51016 words of font info for 93 fonts, out of 8000000 for 9000
+ 4788 strings out of 492649
+ 60388 string characters out of 6129622
+ 190257 words of memory out of 5000000
+ 8558 multiletter control sequences out of 15000+600000
+ 51966 words of font info for 97 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 41i,11n,29p,1439b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,29p,1141b,312s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/lo
 cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr
 /local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
@@ -828,17 +807,18 @@ ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
-ype1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/u
-rw/helvetic/uhvro8ac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/ti
-mes/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 287752 bytes).
+8/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fo
+nts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/urw/helvetic/uhvr8ac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw
+/helvetic/uhvro8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helve
+tic/uhvro8ac.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (7 pages, 297445 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 187 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
