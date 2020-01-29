@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  29 JAN 2020 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  29 JAN 2020 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -678,25 +678,6 @@ t
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-! Undefined control sequence.
-l.51 ...itep{speed2003statistical}, F-Test \citepp
-                                                  {ding2005minimum}, and ANO...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.52 ...ng a black-box optimization method \citepp
-                                                  {rau2019exploring} such as...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -844,32 +825,6 @@ Underfull \hbox (badness 2435) in paragraph at lines 89--90
 \OT1/ptm/m/n/8 autoencoder AE (Hinton and Salakhutdinov, 2006) for dimension
  []
 
-! Undefined control sequence.
-l.94 ...adpoted from concrete distribution \citepp
-                                                  {maddison2016concrete} and...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 3343) in paragraph at lines 94--95
-[]\OT1/ptm/m/n/8 Layer that selects the features shown in Figure 1[] is called
- []
-
-
-Underfull \hbox (badness 2726) in paragraph at lines 94--95
-\OT1/ptm/m/n/8 concrete variable selctor layer adpoted from concrete distributi
-on
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 94--95
-\OT1/ptm/m/n/8 gradient through stochastic nodes of standard autoencoder, gumbe
-l
- []
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 97.
 
@@ -972,17 +927,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
 (Font)              size <5> substituted on input line 116.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.121 ...by which $x_{\argmax_j \; \alpha_j^{(i)}$
-                                                   is produced as an output ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
@@ -1027,7 +971,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \end{equation}
+l.128 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1040,7 +984,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.133 \begin{figure}[hbt]
+l.131 \begin{figure}[hbt]
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1050,7 +994,7 @@ or  <return>  to continue without it.
 File: fig/temp-epoch-mRNA.pdf Graphic file (type pdf)
 
 <use fig/temp-epoch-mRNA.pdf>
-Package pdftex.def Info: fig/temp-epoch-mRNA.pdf used on input line 135.
+Package pdftex.def Info: fig/temp-epoch-mRNA.pdf used on input line 133.
 (pdftex.def)             Requested size: 220.32259pt x 198.24013pt.
 
 
@@ -1060,7 +1004,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.139 ...odel) converges to informative features.}
+l.137 ...odel) converges to informative features.}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1073,7 +1017,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \end{figure}
+l.139 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1091,7 +1035,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141 \end{figure}
+l.139 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1105,46 +1049,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 \begin{figure*}[hbt]
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<fig/acc-mse.pdf, id=60, 825.0825pt x 544.0325pt>
-File: fig/acc-mse.pdf Graphic file (type pdf)
- <use fig/acc-mse.pdf>
-Package pdftex.def Info: fig/acc-mse.pdf used on input line 144.
-(pdftex.def)             Requested size: 412.54024pt x 272.01558pt.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 ...ared error on both mRNA(b) and lncRNA(d)}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 ...fication, Reconstruction, and Evaluation}
+l.141 ...fication, Reconstruction, and Evaluation}
                                                    \label{method-details}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 150--153
+Underfull \hbox (badness 7326) in paragraph at lines 143--146
 \OT1/ptm/m/n/8 The encoder of the Concrete relaxation autoencoder (CoRAE)
  []
 
@@ -1155,7 +1067,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.161     \end{equation}
+l.154     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1168,7 +1080,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165     \end{equation}
+l.158     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1181,7 +1093,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169     \end{equation}
+l.162     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1194,7 +1106,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173     \end{equation}
+l.166     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1207,18 +1119,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 \begin{figure}[hbt]
+l.174 \begin{figure*}[bt]
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<fig/acc-mRNA-lncRNA.pdf, id=61, 459.7175pt x 336.25626pt>
-File: fig/acc-mRNA-lncRNA.pdf Graphic file (type pdf)
-
-<use fig/acc-mRNA-lncRNA.pdf>
-Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf used on input line 184.
-(pdftex.def)             Requested size: 206.87096pt x 151.3139pt.
+<fig/acc-mse.pdf, id=60, 825.0825pt x 544.0325pt>
+File: fig/acc-mse.pdf Graphic file (type pdf)
+ <use fig/acc-mse.pdf>
+Package pdftex.def Info: fig/acc-mse.pdf used on input line 176.
+(pdftex.def)             Requested size: 412.54024pt x 272.01558pt.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -1227,7 +1138,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.185 ...een seelcted using proposed method only.}
+l.177 ...ared error on both mRNA(b) and lncRNA(d)}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1240,7 +1151,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.188 \section{Results}
+l.180 \section{Results}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1253,39 +1164,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 \begin{figure*}[hbt]
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<fig/tSNE.pdf, id=62, 1001.7425pt x 465.74pt>
-File: fig/tSNE.pdf Graphic file (type pdf)
- <use fig/tSNE.pdf>
-Package pdftex.def Info: fig/tSNE.pdf used on input line 194.
-(pdftex.def)             Requested size: 450.77995pt x 209.58105pt.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 ... 100 mRNA, b) t-SNE using top 100 lncRNA}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.200 \subsection{Interpreting Related Features}
+l.185 \subsection{Interpreting Related Features}
                                                  \label{inter}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1298,25 +1177,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.201 ...on with others.  In Figure \ref{fig:tsne}
-                                                  , it is visually revealed ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-LaTeX Warning: Reference `fig:tsne' on page 4 undefined on input line 201.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 \section
-              {Discussion}
+l.187 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1333,8 +1195,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \section
-              {Discussion}
+l.187 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1347,79 +1209,108 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.202 \section{Discussion}
+l.188 \begin{figure}[hbt]
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<fig/acc-mRNA-lncRNA.pdf, id=76, 459.7175pt x 336.25626pt>
+File: fig/acc-mRNA-lncRNA.pdf Graphic file (type pdf)
+
+<use fig/acc-mRNA-lncRNA.pdf>
+Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf used on input line 190.
+(pdftex.def)             Requested size: 206.87096pt x 151.3139pt.
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 ...een seelcted using proposed method only.}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \section{Discussion}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 203--204
+Underfull \hbox (badness 4726) in paragraph at lines 196--197
 \OT1/ptm/m/n/8 In this research, a new differentiable feature selection method
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 203--204
+Underfull \hbox (badness 1337) in paragraph at lines 196--197
 \OT1/ptm/m/n/8 via backpropagation is proposed. In brief, the concrete relaxati
 on
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 203--204
+Underfull \hbox (badness 2012) in paragraph at lines 196--197
 \OT1/ptm/m/n/8 autoencoder used reparameterization and concrete random variable
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 I
-       t is shown via several experiments on publicly available gene express...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.205 I
-       t is shown via several experiments on publicly available gene express...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[5 <./fig/acc-mse.pdf> <./fig/acc-mRNA-lncRNA.pdf>]
-Underfull \hbox (badness 1117) in paragraph at lines 205--206
+Underfull \hbox (badness 1117) in paragraph at lines 198--199
 []\OT1/ptm/m/n/8 It is shown via several experiments on publicly available gene
 
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 205--206
+Underfull \hbox (badness 2856) in paragraph at lines 198--199
 \OT1/ptm/m/n/8 expression cancer datasets that CoRAE efficiently maximizes the
  []
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \begin{figure*}[bt]
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<fig/tSNE.pdf, id=77, 1001.7425pt x 465.74pt>
+File: fig/tSNE.pdf Graphic file (type pdf)
+ <use fig/tSNE.pdf>
+Package pdftex.def Info: fig/tSNE.pdf used on input line 202.
+(pdftex.def)             Requested size: 450.77995pt x 209.58105pt.
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 ... 100 mRNA, b) t-SNE using top 100 lncRNA}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -1436,9 +1327,45 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-LaTeX Warning: Reference `methods-details' on page 6 undefined on input line 20
+LaTeX Warning: Reference `methods-details' on page 5 undefined on input line 20
 7.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5 <./fig/acc-mse.pdf> <./fig/acc-mRNA-lncRNA.pdf>]
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
@@ -1508,18 +1435,6 @@ tm/m/it/7 arXiv preprint
  []
 
 
-Underfull \hbox (badness 2894) in paragraph at lines 159--163
-\OT1/ptm/m/n/7 A continuous relaxation of discrete random variables.  \OT1/ptm/
-m/it/7 arXiv preprint
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--181
-[]\OT1/ptm/m/n/7 Jamshid Pirgazi, Mohsen Alimoradi, Tahereh Esmaeili Abharian, 
-and
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1530,8 +1445,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 
-      
+l.146 ..., Wang, Wang, and Qin]{lu2019autoencoder}
+                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1548,33 +1463,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.235 
-      
+l.146 ..., Wang, Wang, and Qin]{lu2019autoencoder}
+                                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[6])
+[6 <./fig/tSNE.pdf>]
+Underfull \hbox (badness 2894) in paragraph at lines 159--163
+\OT1/ptm/m/n/7 A continuous relaxation of discrete random variables.  \OT1/ptm/
+m/it/7 arXiv preprint
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--181
+[]\OT1/ptm/m/n/7 Jamshid Pirgazi, Mohsen Alimoradi, Tahereh Esmaeili Abharian, 
+and
+ []
+
+)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 19.72272pt
+Extra height:10.0pt when 181.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 20.72272pt
+Extra height:10.0pt when 182.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 21.72272pt
+Extra height:0.0pt when 183.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:21.72272pt Right:21.44545pt Output:21.72272pt
+(2)Left:183.72272pt Right:183.44545pt Output:183.72272pt
 - LAST -
 Extra skip:0.0pt
-Left:21.72272pt
-Right:21.44545pt
-Output:21.72272pt
+Left:183.72272pt
+Right:183.44545pt
+Output:183.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1623,15 +1550,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  3564 strings out of 494914
  40926 string characters out of 6180057
- 118087 words of memory out of 5000000
+ 119095 words of memory out of 5000000
  6754 multiletter control sequences out of 15000+600000
  58718 words of font info for 117 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 35i,11n,28p,1439b,348s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,28p,1439b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-d
@@ -1653,9 +1583,9 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 508710 bytes).
+Output written on main.pdf (7 pages, 1649093 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
+ 218 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
