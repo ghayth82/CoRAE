@@ -3,57 +3,37 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: natbib.bst
 Database file #1: document.bib
-Repeated entry---line 256 of file document.bib
- : @article{hinton2006reducing
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 272 of file document.bib
- : @article{maddison2016concrete
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 278 of file document.bib
- : @article{kingma2013auto
- :                        ,
-I'm skipping whatever remains of this entry
-Too many commas in name 1 of "Abdullah, Al Mamun, Ananda, Mondal" for entry abdullah2019
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Abdullah, Al Mamun, Ananda, Mondal" for entry abdullah2019
-while executing---line 1207 of file natbib.bst
-Too many commas in name 1 of "Abdullah, Al Mamun, Ananda, Mondal" for entry abdullah2019
-while executing---line 1279 of file natbib.bst
-Too many commas in name 1 of "Abdullah, Al Mamun, Ananda, Mondal" for entry abdullah2019
-while executing---line 1279 of file natbib.bst
 Warning--empty journal in abdullah2019
 You've used 34 entries,
             2378 wiz_defined-function locations,
-            742 strings with 11072 characters,
-and the built_in function-call counts, 17565 in all, are:
-= -- 1569
-> -- 1234
+            742 strings with 11075 characters,
+and the built_in function-call counts, 17629 in all, are:
+= -- 1575
+> -- 1245
 < -- 16
-+ -- 383
-- -- 371
-* -- 1735
-:= -- 3154
++ -- 386
+- -- 374
+* -- 1743
+:= -- 3163
 add.period$ -- 156
 call.type$ -- 34
-change.case$ -- 209
+change.case$ -- 210
 chr.to.int$ -- 34
 cite$ -- 35
 duplicate$ -- 639
 empty$ -- 1021
-format.name$ -- 420
-if$ -- 3363
+format.name$ -- 425
+if$ -- 3377
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 34
 newline$ -- 172
 num.names$ -- 136
-pop$ -- 207
+pop$ -- 208
 preamble$ -- 1
-purify$ -- 211
+purify$ -- 212
 quote$ -- 0
-skip$ -- 421
+skip$ -- 423
 stack$ -- 0
 substring$ -- 1013
 swap$ -- 115
@@ -65,4 +45,4 @@ warning$ -- 1
 while$ -- 145
 width$ -- 0
 write$ -- 434
-(There were 7 error messages)
+(There was 1 warning)

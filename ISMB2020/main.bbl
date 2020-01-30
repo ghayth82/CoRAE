@@ -16,11 +16,6 @@ Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., Corrado,
 \newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
 \newblock Software available from tensorflow.org.
 
-\bibitem[Abdullah(2019)Abdullah]{abdullah2019}
-Abdullah, Al~Mamun, A.~M. (2019).
-\newblock Feature selection and classification reveal key lncrnas for multiple
-  cancers.
-
 \bibitem[Abid {\em et~al.}(2019)Abid, Balin, and Zou]{abid2019concrete}
 Abid, A., Balin, M.~F., and Zou, J. (2019).
 \newblock Concrete autoencoders for differentiable feature selection and
@@ -151,6 +146,11 @@ Maddison, C.~J., Mnih, A., and Teh, Y.~W. (2016).
 \newblock The concrete distribution: A continuous relaxation of discrete random
   variables.
 \newblock {\em arXiv preprint arXiv:1611.00712\/}.
+
+\bibitem[Mamun and Mondal(2019)Mamun and Mondal]{abdullah2019}
+Mamun, A.~A. and Mondal, A. (2019).
+\newblock Feature selection and classification reveal key lncrnas for multiple
+  cancers.
 
 \bibitem[Pedregosa {\em et~al.}(2011)Pedregosa, Varoquaux, Gramfort, Michel,
   Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
