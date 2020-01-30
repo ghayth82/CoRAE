@@ -1,11 +1,11 @@
 \relax 
 \citation{pirgazi2019efficient}
 \citation{liu2012feature}
+\citation{pirgazi2019efficient}
+\citation{liang2018review}
 \newlabel{^_1}{{}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
 \newlabel{intro}{{1}{1}}
-\citation{pirgazi2019efficient}
-\citation{liang2018review}
 \citation{speed2003statistical}
 \citation{ding2005minimum}
 \citation{ding2015identification}
@@ -42,6 +42,9 @@
 \newlabel{Tab:01}{{1}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$. During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node. The architecture of the decoder remains the same during train and test stage.}}{3}}
 \newlabel{fig:architecture}{{1}{3}}
+\citation{scikit-learn}
+\citation{tensorflow2015-whitepaper}
+\citation{chollet2015keras}
 \@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Concrete relaxation autoencoder}}{4}}
 \newlabel{algo}{{1}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{2.3}}Gene Selection, Classification, Reconstruction, and Evaluation}{4}}
@@ -50,20 +53,18 @@
 \newlabel{fig:temp-change}{{2}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}}{4}}
 \newlabel{fig:temp}{{3}{4}}
-\citation{scikit-learn}
-\citation{tensorflow2015-whitepaper}
-\citation{chollet2015keras}
 \citation{maaten2008visualizing}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Classification performance using selected RNA features.} Comparison of CoRAE with other feature selection methods. Throughout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classification accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}}{5}}
 \newlabel{fig:acc-mse}{{4}{5}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{5}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  \textbf  {Classification and reconstruction performances for different number of selected mRNAs and lncRNAs. Here, $k$ is refere to the number of feature to be selected. Perforamnce evaluations for other $k$ are shown in \textit  {supplementary-1} Table 2}}}{6}}
 \newlabel{Tab:02}{{2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}}{6}}
+\newlabel{fig:acc-mRNA-lncRNA}{{5}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {{3.1}}Selected Features Interpretation}{6}}
 \newlabel{inter}{{{3.1}}{6}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}}{6}}
-\newlabel{fig:acc-mRNA-lncRNA}{{5}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{6}}
 \bibstyle{natbib}
 \bibdata{document}
 \bibcite{tensorflow2015-whitepaper}{{1}{2015}{{Abadi {\em  et~al.}}}{{Abadi, Agarwal, Barham, Brevdo, Chen, Citro, Corrado, Davis, Dean, Devin, Ghemawat, Goodfellow, Harp, Irving, Isard, Jia, Jozefowicz, Kaiser, Kudlur, Levenberg, Man\'{e}, Monga, Moore, Murray, Olah, Schuster, Shlens, Steiner, Sutskever, Talwar, Tucker, Vanhoucke, Vasudevan, Vi\'{e}gas, Vinyals, Warden, Wattenberg, Wicke, Yu, and Zheng}}}
@@ -83,15 +84,14 @@
 \bibcite{kingma2013auto}{{15}{2013}{{Kingma and Welling}}{{Kingma and Welling}}}
 \bibcite{le2019statistical}{{16}{2019}{{Le {\em  et~al.}}}{{Le, Urbanowicz, Moore, and McKinney}}}
 \bibcite{li2015tanric}{{17}{2015}{{Li {\em  et~al.}}}{{Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and Liang}}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}}{7}}
-\newlabel{fig:tsne}{{6}{7}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{7}}
 \bibcite{liang2018review}{{18}{2018}{{Liang {\em  et~al.}}}{{Liang, Ma, Yang, Wang, and Ma}}}
 \bibcite{liu2012feature}{{19}{2012}{{Liu and Motoda}}{{Liu and Motoda}}}
 \bibcite{lu2019autoencoder}{{20}{2019}{{Lu {\em  et~al.}}}{{Lu, Gu, Wang, Wang, and Qin}}}
 \bibcite{maaten2008visualizing}{{21}{2008}{{Maaten and Hinton}}{{Maaten and Hinton}}}
 \bibcite{maddison2016concrete}{{22}{2016}{{Maddison {\em  et~al.}}}{{Maddison, Mnih, and Teh}}}
 \bibcite{abdullah2019}{{23}{2019}{{Mamun and Mondal}}{{Mamun and Mondal}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}}{7}}
+\newlabel{fig:tsne}{{6}{7}}
 \bibcite{scikit-learn}{{24}{2011}{{Pedregosa {\em  et~al.}}}{{Pedregosa, Varoquaux, Gramfort, Michel, Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and Duchesnay}}}
 \bibcite{pirgazi2019efficient}{{25}{2019}{{Pirgazi {\em  et~al.}}}{{Pirgazi, Alimoradi, Abharian, and Olyaee}}}
 \bibcite{pouyan2018random}{{26}{2018}{{Pouyan and Kostka}}{{Pouyan and Kostka}}}

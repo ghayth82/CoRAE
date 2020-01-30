@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  30 JAN 2020 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  30 JAN 2020 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,7 +612,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \makeMPintoPDFobject=\count114
 \everyMPtoPDFconversion=\toks31
 )
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -623,65 +623,65 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \maketitle
+l.54 \maketitle
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <18> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 53.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 54.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 53.
+(Font)              size <8> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 53.
+(Font)              size <5> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <8.5> not available
-(Font)              size <8> substituted on input line 53.
+(Font)              size <8> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.25> not available
-(Font)              size <5> substituted on input line 53.
+(Font)              size <5> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <8.5> not available
-(Font)              size <8> substituted on input line 53.
+(Font)              size <8> substituted on input line 54.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.25> not available
-(Font)              size <5> substituted on input line 53.
+(Font)              size <5> substituted on input line 54.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <9> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 53.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 54.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 53
+Underfull \hbox (badness 10000) detected at line 54
 []
  []
 
@@ -692,7 +692,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \section{Introduction}
+l.55 \section{Introduction}
                             \label{intro}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -700,6 +700,18 @@ or  <return>  to continue without it.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 66--72
+\OT1/ptm/m/n/8 training speeds and the accuracy of the learning models. Overall
+,
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 66--72
+\OT1/ptm/m/n/8 appropriate feature selection can provide the following advantag
+es:
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -712,20 +724,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 
+l.72 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 64.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 72.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 64.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 72.
 
 Overfull \hbox (1.52002pt too wide) has occurred while \output is active
  []
@@ -738,7 +750,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 
+l.72 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -749,19 +761,7 @@ or  <return>  to continue without it.
 
 
 ]
-Underfull \hbox (badness 1253) in paragraph at lines 65--71
-\OT1/ptm/m/n/8 training speeds and the accuracy of the learning models. Overall
-,
- []
-
-
-Underfull \hbox (badness 1199) in paragraph at lines 65--71
-\OT1/ptm/m/n/8 appropriate feature selection can provide the following advantag
-es:
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 82--88
+Underfull \hbox (badness 1990) in paragraph at lines 83--89
 []\OT1/ptm/m/n/8 As an enhancement, the wrapper method is proposed with a
  []
 
@@ -772,58 +772,58 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \begin{table*}[hbt]
+l.104 \begin{table*}[hbt]
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 123.
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 124.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
+(Font)              size <7> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 123.
+(Font)              size <5> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
+(Font)              size <7> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.75> not available
-(Font)              size <5> substituted on input line 123.
+(Font)              size <5> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
+(Font)              size <7> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.75> not available
-(Font)              size <5> substituted on input line 123.
+(Font)              size <5> substituted on input line 124.
 
-LaTeX Font Info:    Try loading font information for OT1+phb on input line 123.
+LaTeX Font Info:    Try loading font information for OT1+phb on input line 124.
 
-LaTeX Font Info:    No file OT1phb.fd. on input line 123.
+LaTeX Font Info:    No file OT1phb.fd. on input line 124.
 
 LaTeX Font Warning: Font shape `OT1/phb/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 123.
+(Font)              using `OT1/cmr/m/n' instead on input line 124.
 
 
 LaTeX Font Warning: Font shape `OT1/phb/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
+(Font)              size <7> substituted on input line 124.
 
 
 LaTeX Font Warning: Font shape `OT1/phb/bx/n' undefined
-(Font)              using `OT1/phb/m/n' instead on input line 123.
+(Font)              using `OT1/phb/m/n' instead on input line 124.
 
 
 LaTeX Font Warning: Font shape `OT1/phb/bx/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 123.
+(Font)              size <7> substituted on input line 124.
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 99--125
+Underfull \hbox (badness 1226) in paragraph at lines 100--126
 \OT1/ptm/m/n/8 the proposed approach. Our initial evaluations show the improved
 
  []
@@ -835,7 +835,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \section{Materials and Methods}
+l.126 \section{Materials and Methods}
                                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -848,7 +848,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 ...on{Coding and Non-coding Gene Expression}
+l.127 ...on{Coding and Non-coding Gene Expression}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -861,22 +861,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \begin{figure*}[h!]
+l.131 \begin{figure*}[h!]
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<fig/architecture.pdf, id=14, 696.6025pt x 432.61626pt>
+<fig/architecture.pdf, id=17, 696.6025pt x 432.61626pt>
 File: fig/architecture.pdf Graphic file (type pdf)
 
 <use fig/architecture.pdf>
-Package pdftex.def Info: fig/architecture.pdf used on input line 132.
+Package pdftex.def Info: fig/architecture.pdf used on input line 133.
 (pdftex.def)             Requested size: 348.3004pt x 216.3076pt.
 
 
 LaTeX Font Warning: Font shape `OT1/phb/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 135.
+(Font)              size <6> substituted on input line 136.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -885,57 +885,57 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 ...ns the same during train and test stage.}
+l.136 ...ns the same during train and test stage.}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <6.5> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 135.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 136.
 
 LaTeX Font Warning: Font shape `OT1/phb/bx/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 135.
+(Font)              size <6> substituted on input line 136.
 
-LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 135.
+LaTeX Font Info:    Calculating math sizes for size <6.5> on input line 136.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 135.
+(Font)              size <6> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <6.5> not available
-(Font)              size <6> substituted on input line 135.
+(Font)              size <6> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.54997> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.25> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
-(Font)              size <6> substituted on input line 135.
+(Font)              size <6> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.54997> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.25> not available
-(Font)              size <5> substituted on input line 135.
+(Font)              size <5> substituted on input line 136.
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 127--138
+Underfull \hbox (badness 1688) in paragraph at lines 128--139
 \OT1/ptm/m/n/8 To validate the proposed idea, TCGA RNAseq cancer expression
  []
 
@@ -949,23 +949,38 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \subsection{Concrete Relaxation Autoencoder}
+l.139 \subsection{Concrete Relaxation Autoencoder}
                                                    \label{CoRAE}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 149--151
+Underfull \hbox (badness 1019) in paragraph at lines 150--152
 []\OT1/ptm/m/n/8 The layer that selects the features and highlighted in Figure 
 1[]
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 149--151
+Underfull \hbox (badness 1072) in paragraph at lines 150--152
 \OT1/ptm/m/n/8 is called concrete variable selctor layer adopted from the concr
 ete
  []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 153.
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 \end{equation}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -974,14 +989,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 \begin{equation}
+l.156 \begin{equation}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 151.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 156.
 
 Overfull \hbox (252.0pt too wide) has occurred while \output is active
 [][] 
@@ -994,16 +1009,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.151 \begin{equation}
+l.156 \begin{equation}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [2]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 152.
-
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
@@ -1011,24 +1023,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \end{equation}
+l.158 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: Encoding scheme `LY1' unknown.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 \end{equation}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -1037,8 +1040,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 
-      
+l.165 T
+       he temperature of the random variable in the selector layer has a sig...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1055,8 +1059,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 
-      
+l.165 T
+       he temperature of the random variable in the selector layer has a sig...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1069,7 +1074,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{equation}
+l.168 \end{equation}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1082,14 +1087,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.169 \begin{algorithm}[h]
+l.170 \begin{algorithm}[h]
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.170 \SetAlgoLined
+l.171 \SetAlgoLined
                    
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1104,7 +1109,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \KwResult{ $k$ number of features}
+l.173 \KwResult{ $k$ number of features}
                                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1117,7 +1122,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175  }
+l.176  }
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1130,7 +1135,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175  }
+l.176  }
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1143,7 +1148,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175  }
+l.176  }
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1156,7 +1161,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1169,7 +1174,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1182,7 +1187,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1195,7 +1200,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1208,7 +1213,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1221,14 +1226,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.182 }
+l.183 }
        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) detected at line 185
+Underfull \hbox (badness 10000) detected at line 186
 [][]
  []
 
@@ -1239,7 +1244,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.186 \begin{figure}[h!]
+l.187 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1249,7 +1254,7 @@ or  <return>  to continue without it.
 File: fig/temp-change.pdf Graphic file (type pdf)
 
 <use fig/temp-change.pdf>
-Package pdftex.def Info: fig/temp-change.pdf used on input line 188.
+Package pdftex.def Info: fig/temp-change.pdf used on input line 189.
 (pdftex.def)             Requested size: 170.13521pt x 236.38254pt.
 
 
@@ -1259,7 +1264,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 ...r reduces to 3 which is equal to the $k$}
+l.190 ...r reduces to 3 which is equal to the $k$}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1272,7 +1277,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 \begin{figure}[h!]
+l.193 \begin{figure}[h!]
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1282,7 +1287,7 @@ or  <return>  to continue without it.
 File: fig/temp-epoch-mRNA.pdf Graphic file (type pdf)
 
 <use fig/temp-epoch-mRNA.pdf>
-Package pdftex.def Info: fig/temp-epoch-mRNA.pdf used on input line 194.
+Package pdftex.def Info: fig/temp-epoch-mRNA.pdf used on input line 195.
 (pdftex.def)             Requested size: 198.28897pt x 178.4149pt.
 
 
@@ -1292,7 +1297,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 ...odel) converges to informative features.}
+l.196 ...odel) converges to informative features.}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1305,7 +1310,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 \begin{figure*}[hbt]
+l.199 \begin{figure*}[hbt]
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1314,7 +1319,7 @@ or  <return>  to continue without it.
 <fig/acc-mse.pdf, id=60, 825.0825pt x 544.0325pt>
 File: fig/acc-mse.pdf Graphic file (type pdf)
  <use fig/acc-mse.pdf>
-Package pdftex.def Info: fig/acc-mse.pdf used on input line 200.
+Package pdftex.def Info: fig/acc-mse.pdf used on input line 201.
 (pdftex.def)             Requested size: 412.54024pt x 272.01558pt.
 
 
@@ -1324,7 +1329,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.201 ...ared error on both mRNA(b) and lncRNA(d)}
+l.202 ...ared error on both mRNA(b) and lncRNA(d)}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1343,14 +1348,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.204 ...fication, Reconstruction, and Evaluation}
+l.205 ...fication, Reconstruction, and Evaluation}
                                                    \label{method-details}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 206--213
+Underfull \hbox (badness 7326) in paragraph at lines 207--214
 \OT1/ptm/m/n/8 The encoder of the Concrete relaxation autoencoder (CoRAE)
  []
 
@@ -1361,7 +1366,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 
+l.227 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1379,7 +1384,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.222 
+l.227 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1393,7 +1398,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.232     \end{equation}
+l.233     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1406,7 +1411,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.236     \end{equation}
+l.237     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1419,7 +1424,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240     \end{equation}
+l.241     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1432,7 +1437,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244     \end{equation}
+l.245     \end{equation}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1445,17 +1450,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 \begin{table*}[hbt]
+l.252 \begin{table*}[hbt]
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 275.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 276.
 
 LaTeX Font Warning: Font shape `OT1/phb/bx/it' undefined
-(Font)              using `OT1/phb/bx/n' instead on input line 275.
+(Font)              using `OT1/phb/bx/n' instead on input line 276.
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -1464,7 +1469,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 \section{Results}
+l.278 \section{Results}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1477,7 +1482,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.285 
+l.290 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1495,7 +1500,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.285 
+l.290 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1509,7 +1514,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.294   \begin{figure}[hbt]
+l.295   \begin{figure}[hbt]
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1519,7 +1524,7 @@ or  <return>  to continue without it.
 File: fig/acc-mRNA-lncRNA.pdf Graphic file (type pdf)
 
 <use fig/acc-mRNA-lncRNA.pdf>
-Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf used on input line 296.
+Package pdftex.def Info: fig/acc-mRNA-lncRNA.pdf used on input line 297.
 (pdftex.def)             Requested size: 206.87096pt x 151.3139pt.
 
 
@@ -1529,14 +1534,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.297 ...een seelcted using proposed method only.}
+l.298 ...een seelcted using proposed method only.}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 290--300
+Underfull \hbox (badness 3568) in paragraph at lines 291--301
 []\OT1/ptm/m/n/8 The CoRAE method is resilient to errors that occur during
  []
 
@@ -1547,7 +1552,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 ...section{Selected Features Interpretation}
+l.301 ...section{Selected Features Interpretation}
                                                    \label{inter}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1560,7 +1565,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 \begin{figure*}[hbt]
+l.308 \begin{figure*}[hbt]
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1569,7 +1574,7 @@ or  <return>  to continue without it.
 <fig/tSNE.pdf, id=138, 1001.7425pt x 465.74pt>
 File: fig/tSNE.pdf Graphic file (type pdf)
  <use fig/tSNE.pdf>
-Package pdftex.def Info: fig/tSNE.pdf used on input line 309.
+Package pdftex.def Info: fig/tSNE.pdf used on input line 310.
 (pdftex.def)             Requested size: 450.77995pt x 209.58105pt.
 
 
@@ -1579,7 +1584,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310 ... 100 mRNA, b) t-SNE using top 100 lncRNA}
+l.311 ... 100 mRNA, b) t-SNE using top 100 lncRNA}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1592,7 +1597,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.313 \section{Discussion}
+l.314 \section{Discussion}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1605,8 +1610,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 \section
-              {Conclusion}
+l.332 \section{Conclusion}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.339 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1623,28 +1641,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.331 \section
-              {Conclusion}
+l.339 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [6 <./fig/acc-mRNA-lncRNA.pdf>]
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.331 \section{Conclusion}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 339--341
+Underfull \hbox (badness 1122) in paragraph at lines 340--342
 \OT1/ptm/m/n/8 features to measure the prognostic capabilities. Similarly, path
 way
  []
@@ -1656,7 +1660,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.341 \section*{Acknowledgements}
+l.342 \section*{Acknowledgements}
                                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1839,42 +1843,6 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.116 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[7 <./fig/tSNE.pdf>]
-
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1919,6 +1887,42 @@ Underfull \hbox (badness 2894) in paragraph at lines 145--149
 m/it/7 arXiv preprint
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 ...her, Perrot, and Duchesnay]{scikit-learn}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 ...her, Perrot, and Duchesnay]{scikit-learn}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7 <./fig/tSNE.pdf>]
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
@@ -2055,52 +2059,52 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 217.72272pt
+Extra height:10.0pt when 145.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 218.72272pt
+Extra height:10.0pt when 146.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 219.72272pt
+Extra height:10.0pt when 147.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 220.72272pt
+Extra height:10.0pt when 148.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 221.72272pt
+Extra height:10.0pt when 149.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 222.72272pt
+Extra height:10.0pt when 150.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 223.72272pt
+Extra height:10.0pt when 151.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 224.72272pt
+Extra height:10.0pt when 152.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 225.72272pt
+Extra height:10.0pt when 153.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 226.72272pt
+Extra height:0.0pt when 154.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:226.72272pt Right:210.44545pt Output:226.72272pt
+(2)Left:154.72272pt Right:138.44545pt Output:154.72272pt
 - LAST -
 Extra skip:0.0pt
-Left:226.72272pt
-Right:210.44545pt
-Output:226.72272pt
+Left:154.72272pt
+Right:138.44545pt
+Output:154.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2112,7 +2116,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.353 \end{document}
+l.354 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2130,7 +2134,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.353 \end{document}
+l.354 \end{document}
                     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2150,7 +2154,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4643 strings out of 494914
  54447 string characters out of 6180057
- 158668 words of memory out of 5000000
+ 157668 words of memory out of 5000000
  7816 multiletter control sequences out of 15000+600000
  61071 words of font info for 118 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
@@ -2176,7 +2180,7 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 1686613 bytes).
+Output written on main.pdf (8 pages, 1685847 bytes).
 PDF statistics:
  250 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
