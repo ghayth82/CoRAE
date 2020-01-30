@@ -91,7 +91,7 @@ We have tested our end-to-end model on coding and non-coding gene expression dat
 To validated the proposed idea, TCGA RNAseq cancer (n=9566) and clinical samples for $33$ cancers were downloaded from UCSC Xena database (https://xenabrowser.net). 
 TCGA processed raw RNAseq data uses Illumina HiSeq 2000 RNA sequencing platform where per-gene normalized abundance estimation is calculated using the FPKM method. 
 RNASeq normalized counts are then log transformed after adding a constant of $1$. 
-Subsequently, UCSC re-processed this using GENCODE v23 transcript annotation to quantify protein coding() and non-coding transcripts() expression \citep{harrow2006gencode}. 
+Subsequently, UCSC re-processed this using GENCODE v23 transcript annotation to quantify protein coding and non-coding transcripts expression \citep{harrow2006gencode}. 
 Coding genes refer to mRNA whereas non-coding genes refer to long non-coding RNA (lncRNA) in this experiment. 
 To improve the focus on individual feature selection, we separated the mRNA and lncRNA expression from the combined database using the standard list of lncRNAs provided by TANRIC \citep{li2015tanric}. 
 
@@ -100,6 +100,16 @@ We merged all the cancer samples for individual RNA types to aid further experim
 Each row is mapped to a unique Ensemble ID, and each column mapped to a patient ID. 
 Normal patients or RNA with missing data were removed from the original dataset. 
 Each RNA expression was further processed using min-max normalization method to achieve good training performance. 
+
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[scale=0.5]{fig/architecture.pdf}
+    \caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$.
+During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node.
+The architecture of the decoder remains the same during train and test stage.}
+    \label{fig:architecture}
+\end{figure*}
+
 
 \subsection{Concrete Relaxation Autoencoder} \label{CoRAE}
 The concrete relaxation autoencoder (CoRAE) is a variation of the original autoencoder (AE) \citep{hinton2006reducing} which is used for dimension reduction. 
@@ -129,20 +139,26 @@ where $f_k$ refers to the $k_{th}$ element in a particular sample vector.
 With the limit $\tau \to 0$, the concrete variable uniformly progresses the discrete distribution, producing one-hot vector with $f_k = 1$ with a probabilistic chance of $\alpha _k/\sum_p \alpha _p$.
 The advantage of using a concrete random discrete variable is that it is differentiable $w.r.t$ $\alpha$ using reparameterization technique as mentioned by \citep{kingma2013auto}.
 
-\begin{figure*}[hbt]
-    \centering
-    \includegraphics[scale=0.5]{fig/architecture.pdf}
-    \caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$.
-During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node.
-The architecture of the decoder remains the same during train and test stage.}
-    \label{fig:architecture}
-\end{figure*}
+%\begin{figure*}[h!]
+  %  \centering
+    %\includegraphics[scale=0.5]{fig/architecture.pdf}
+    %\caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$.
+%During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node.
+%%  \label{fig:architecture}
+%\end{figure*}
 
-\begin{figure*}[hbt]
+\begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/temp-change.pdf}
     \caption{\textbf{Temperature Effect.}  }
     \label{fig:temp-change}
+\end{figure}
+
+\begin{figure*}[h!]
+    \centering
+    \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
+    \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
+    \label{fig:temp}
 \end{figure*}
 
 More concisely, the way original feature is selected using the concrete random variable as follows: a $z$-dimensional concrete random variable $f^{(i)}$ is sampled for each node of the selector layer with $k$ nodes where $i$ refers to the index of the node, $i \in \{1...k\}$. The output of the $i^{th}$ node is $ \textbf{x}.f^{(i)}$. Although it is a combination of the input feature`s weight, every node of the selector layer produces exactly one of the original input features in the limit $\tau \to 0$. After training the network, a discrete $\argmax$ layer is replaced with the concrete selector layer by which $x_{\argmax_j \; \alpha_j^{(i)}}$ is produced as an output of $i^{th}$ node during the testing phase. The value of $\alpha_i$ initially starts with a small positive random number so that it can explore various combinations of input features. As the model is being trained, the value of $\alpha_i$, in other words the probability of class $i$ becomes more stable. As a result, the model reduces its stochasticity rather increases the confidence in drawing a particular subset of features. 
@@ -153,12 +169,12 @@ The temperature of the random variable in the selector layer has a significant i
 \end{equation}
 where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number of epochs. The proposed annealing schedule is good enough to explore the feature combinations during the training phase and finally lowered temperature enables the model to strict to the best set of features which is shown in Figure \ref{fig:temp}.
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
-    \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
-    \label{fig:temp}
-\end{figure}
+%\begin{figure}[h!]
+  %  \centering
+   % \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
+   % \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
+    %\label{fig:temp}
+%\end{figure}
 
 \subsection{Gene Selection, Classification, Reconstruction, and Evaluation} \label{method-details}
 %\subsubsection{Feature Selection}
