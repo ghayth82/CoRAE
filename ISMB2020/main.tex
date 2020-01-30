@@ -49,18 +49,55 @@ online.}
 \maketitle
 
 \section{Introduction} \label{intro}
-The well-known issue of recent omics data is a feature-sample ratio which is highly imbalanced means the number of features is way more than the number of samples. Among all the available features, few might be meaningful for distinguishing the samples which belong to different classes and the rest of these are either irrelevant, redundant, or noise \citep{pirgazi2019efficient}. During classification or clustering the high dimensional data, irrelevant features cause unnecessary computational complexities and decrease the performance. Therefore, it is essential to identify the most relevant features that would have a high contribution to the classificaiton or clustering of the data. During the feature selection process, redundant features are removed because there is a subset of features that carries approximate similar information. In a similar fashion, noise features that provide no information about labels are also be removed from the database. Thus, only relevant features will be remain that will increase the efficiency of any classification or clustering problems \citep{liu2012feature}. 
-Any dataset with $N$ number of features has $2^N$ possible subset of features. The goal of feature selection algorithms is to find the most precise subset of features. Due to having a large number of possible combinations, finding the best subset of N features is computationally challenging and costly \cite{liang2018review}.
 
-Filter, wrapper, embedded are the types of feature selection methods. Numerous algorithms have been proposed for each type of feature selection method. 
-In the filtering method, a rank is assigned to each feature depending on the statistical relevance to the class type. In both univariate and multivariate filter method, feature-feature interactions are not considered in the selection process. Some example studies such as Pearson correlation coefficient(PC), t-statistics(TS) \citep{speed2003statistical}, F-Test \citep{ding2005minimum}, and ANOVA \citep{ding2015identification}. These methods are effective for selecting features for high-dimensional data because of its fewer computation expenses but failed to provide a good accuracy \citep{sun2018cross}. 
-To enhance the performance, the wrapper method is proposed with a learning algorithm and a classifier to find a suitable subset of features. First, it generates a random solution, then it maximize an objective function using a black-box optimization method \citep{rau2019exploring} such as Simulated Annealing \citep{jeong2018feature}, Particle Swarm Optimization \citep{xue2012particle}, Genetic Algorithm \citep{wu2011feature}, and Ant Colony Optimization \citep{kabir2012new}. Since these methods evaluate every candidate subset of feature iteratively, they can find a strong relationship between features but it increases computational expenses. 
-Similarly, embedded method do so efficiently as it is a part of its learning phase. Thus, it reduces the computational costs. Some well-known example studies are  LASSO \citep{tibshirani1996regression}, recursive feature ellimation with state vector machien estimator (SVM-RFE) \citep{abdullah2019, guyon2002gene, fang2019tightly}, random forest \citep{pouyan2018random, ram2017classification}, Adabost \citep{wang2012adaboost}, KNN \citep{le2019statistical}, and autoencoder \citep{lu2019autoencoder}.
+A major issue while working with recent omics data is the availability of greater number of features in comparison to the available number of samples leading to a highly imbalanced feature-sample ratio. 
+It may be great to argue that the larger the feature set, the better the classification that is possible. 
+However, in the contrary, in a general setting, not all of these features will be necessary for optimal classification. 
+Only a selected number of significant features when used with the classifier can lead to optimal classification leading to the distinguishing samples that belong to different classes. 
+A large part of the remaining features are not too significant and could be either noise, irrelevant to the study or even redundant~\citep{pirgazi2019efficient}. 
+The use of such insignificant features can lead to unwanted computational complexities and hamper the performance of the system. 
+This is more pronounced when working with data having high dimensionality. 
+Thus, it is essential to identify the set of significant features that can provide us with the optimal classification and clustering. 
+For this to be accomplished, we need a robust method that can eliminate the redundant features and noise that do not have any information about the labels leaving us with only relevant features~\citep{liu2012feature}. 
 
-In general, feature selection methods are useful to get insight about large and complex dataset which can simplify the learning process of any machine learning algorithm. The use of feature selection is worthy when using the whole set of features is difficult to collect or costly to execute. For example, the gene expression dataset contains more than 60 thousand features with a very low number of samples. It is normal to ask: \textit{Is it possible to identify important genes those expressions can classify available disease or cancer type?} The domain of feature selection is way more dissimilar than standard dimension reduction techniques such as principal component analysis (PCA) \citep{hotelling1933analysis}, and autoencoders \citep{hinton2006reducing}. They can preserve maximum variance with a fewer number of features, however, these methods do not provide the original features of the dataset. Thus, it is impossible to eliminate redundant or irrelevant features from the dataset. 
+Any dataset with $N$ number of features has $2^N$ possible subset of features. 
+In the presence of such large number of possible combinations, finding the best subset of N features is computationally challenging and expensive~\citep{liang2018review}.
+An optimally selected set of features optimizes the performance of the models and also helps in alleviating the effect of \emph{overfitting} and \emph{high-dimensionality}. 
+Along with the above benefits, selecting the appropriate features helps in easier interpretation of the model and thus its predictions. 
+Also, the use of the gratuitous features can significantly impact the training speeds and the accuracy of the learning models. 
+Overall, appropriate feature selection can provide the following advantages: (a)~reduced cost for computation and storage, (b)~adequate use of the available sample set for improved performance, (c)~improved timing for classification and thus predictions, (d)~easier interpretation of the the data and thus the final predictions.
 
-In this paper, a novel feature subset selection method that increases the power deep autoencoder for differentiable feature selection is proposed. Our method CoRAE introduces a new layer in the autoencoder called concrete distribution of features which allows the model to select a user-defined number of original features. Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingma2013auto}, and reparameterization technique to minimize the loss and reconstruction error from \citep{abid2019concrete}. 
-We have tested our end-to-end model on coding and non-coding gene expression dataset and it outperforms state-of-the-art feature selection techniques. 
+
+Filter, wrapper, embedded methods are the three general classes / types of feature selection algorithms. 
+Numerous algorithms have been proposed for each of these types of feature selection methods. 
+The filtering method works by a ranking the features using a statistical score that is assigned to each of them depending on their relevance to the class type. 
+In both the univariate and multivariate filter methods, the interactions among features are disregarded in the selection process. 
+Studies like the ones in Pearson correlation coefficient(PC), t-statistics(TS) \citep{speed2003statistical}, F-Test \citep{ding2005minimum}, and ANOVA \citep{ding2015identification} are examples where the filtering method is used. 
+It is observed that these methods are effective for selecting features in high-dimensional data because of the reduced computation expenses. 
+However, they fail to provide good accuracy as discussed in~\citep{sun2018cross}.
+
+ 
+As an enhancement, the wrapper method is proposed with a learning algorithm and a classifier to find a suitable subset of features. 
+Initially, a random solution is generated following which, an objective function is maximized using black-box optimization methods~\citep{rau2019exploring} like simulated annealing~\citep{jeong2018feature}, particle swarm optimization~\citep{xue2012particle}, genetic algorithm~\citep{wu2011feature} and, ant colony optimization~\citep{kabir2012new}. 
+The evaluation of every candidate subset of the feature iteratively by the method leads to identification of a strong relationship between features however with an increase in the computational expense. 
+Embedded methods are very efficient as they are a part of the learning phase. 
+This helps reduce the computation costs. 
+Well-known example of the embedded method are LASSO~\citep{tibshirani1996regression}, recursive feature ellimation with state vector machine estimator (SVM-RFE) \citep{abdullah2019, guyon2002gene, fang2019tightly}, random forest \citep{pouyan2018random, ram2017classification}, Adabost \citep{wang2012adaboost}, KNN \citep{le2019statistical}, and autoencoder \citep{lu2019autoencoder}.
+
+
+%In general, feature selection methods are useful to get a good insight about large and complex datasets which can simplify the learning process of any machine learning algorithm. 
+In general, the use of feature selection is worthwhile when using the whole set of features is difficult or the cost of execution is high. 
+As an example, the gene expression dataset contains more than 60 thousand features with a very low number of samples. 
+It thus is important to answer the impending questions: \textit{Is it possible to identify important genes those expressions can classify available disease or cancer type?}. 
+Feature selection works differently compared to the standard dimension reduction techniques such as principal component analysis (PCA)~\citep{hotelling1933analysis}, and autoencoders~\citep{hinton2006reducing}. 
+The above mentioned methods can preserve maximum variance with a highly reduced number of features. 
+However, these methods do not provide the original features of the dataset making it difficult to improbable to eliminate redundant or irrelevant features from the dataset. 
+
+
+In this paper, we propose a novel feature subset selection method that increases the power of a standard deep autoencoder for differentiable feature selection. 
+Our major contributions in this paper is two fold: (a)~we create a new variant of the standard autoencoder by introducing the use of a concrete relaxation discrete random variable selection layer for encoding allowing selection of user-defined number of original features, (b)~evaluation of the performance of the proposed approach on coding and non-coding gene expression datasets, (c)~modifying the codebase of a standard autoencode to realize the proposed approach. Our initial evaluations show the improved performance of the proposed approach in comparison to the existing state-of-the-art methods in identifying the top 100 coding and non-coding genes that can distinguish 33 different types of cancers.
+The results also show a significant increase in the classification performance up to 99\%.
+Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingma2013auto}, and reparameterization technique to minimize the loss and reconstruction error from \citep{abid2019concrete}.
 
 \begin{table*}[hbt]
 \processtable{ \textbf{Sample Distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test\\\midrule
@@ -147,20 +184,6 @@ The advantage of using a concrete random discrete variable is that it is differe
 %%  \label{fig:architecture}
 %\end{figure*}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[scale=0.5]{fig/temp-change.pdf}
-    \caption{\textbf{Temperature Effect.}  }
-    \label{fig:temp-change}
-\end{figure}
-
-\begin{figure*}[h!]
-    \centering
-    \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
-    \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
-    \label{fig:temp}
-\end{figure*}
-
 More concisely, the way original feature is selected using the concrete random variable as follows: a $z$-dimensional concrete random variable $f^{(i)}$ is sampled for each node of the selector layer with $k$ nodes where $i$ refers to the index of the node, $i \in \{1...k\}$. The output of the $i^{th}$ node is $ \textbf{x}.f^{(i)}$. Although it is a combination of the input feature`s weight, every node of the selector layer produces exactly one of the original input features in the limit $\tau \to 0$. After training the network, a discrete $\argmax$ layer is replaced with the concrete selector layer by which $x_{\argmax_j \; \alpha_j^{(i)}}$ is produced as an output of $i^{th}$ node during the testing phase. The value of $\alpha_i$ initially starts with a small positive random number so that it can explore various combinations of input features. As the model is being trained, the value of $\alpha_i$, in other words the probability of class $i$ becomes more stable. As a result, the model reduces its stochasticity rather increases the confidence in drawing a particular subset of features. 
 
 The temperature of the random variable in the selector layer has a significant impact in forming the output of each node. Initially, when $\tau$ is high, search space is large since it considers a linear combination of all features. In contrast, the selector layer will not be able to search all possible combinations of features in low $\tau$ and thus, model converges to a bad local minima. Instead of using a fixed temperature, a simple annealing scheduling scheme is used for every concrete variable. It starts with an user-defined high temperature ($\tau_s$) and steadily lowers the temperature until it touches the ending bound ($\tau_e$) by every epoch as follows: 
@@ -169,12 +192,26 @@ The temperature of the random variable in the selector layer has a significant i
 \end{equation}
 where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number of epochs. The proposed annealing schedule is good enough to explore the feature combinations during the training phase and finally lowered temperature enables the model to strict to the best set of features which is shown in Figure \ref{fig:temp}.
 
-%\begin{figure}[h!]
-  %  \centering
-   % \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
-   % \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
-    %\label{fig:temp}
-%\end{figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{fig/temp-change.pdf}
+    \caption{\textbf{Temperature Effect.}  }
+    \label{fig:temp-change}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[scale=0.5]{fig/temp-epoch-mRNA.pdf}
+    \caption{\textbf{Annealing schedules for the CoRAE.} Effect of different annealing schedules on a concrete autoencoder trained on the mRNA dataset with $k$ = 100 selected features. If the temperature is exponentially decayed (the annealing schedule), the feature selected layer (model) converges to informative features.}
+    \label{fig:temp}
+\end{figure}
+
+\begin{figure*}[hbt]
+    \centering
+    \includegraphics[scale=0.5]{fig/acc-mse.pdf}
+    \caption{\textbf{Classification performance using selected RNA features.}  Comparison of CoRAE with other feature selection methods. Throughout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classification accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}
+    \label{fig:acc-mse}
+  \end{figure*}
 
 \subsection{Gene Selection, Classification, Reconstruction, and Evaluation} \label{method-details}
 %\subsubsection{Feature Selection}
@@ -194,7 +231,6 @@ In the recursive feature elimination technique, SVM is used as an estimator.
 Linear kernel with a regularization parameter $C=0.05$ is used. $C$ controls the tradeoff between the error and norm of the learning weights. 
 GridSearch algorithm is used to estimate the best set of parameters for SVM. 
 In every iteration of RFE, the number of dropped features is set to 100. 
-
 
 We extract a subset of features by varying $k$ from 10 to 500. For the comparison to be fair  and along the same grounds with CoRAE, the same number of genes are selected using LASSO and SVM-RFE. 
 The dataset with reduced number of features (expression of selected genes) to the SVM for classifying 33 cancer types on both mRNA and lncRNA expression. Similarly, to reconstruct all the input features, we trained a linear regressor with no regularization and measure the reconstruction mean square error. 
@@ -225,13 +261,18 @@ and b) the number of genes should be as less as possible so that biologists can 
 easily. The capabilities of selected genes in pan-cancer classification is visually validated using unsupervised visualization technique t-SNE \citep{maaten2008visualizing}.
 
 %Survival analysis is conducted for testing the prognostic capabilities of selected gene set. 
-\begin{figure*}[hbt]
+  \begin{figure}[hbt]
     \centering
-    \includegraphics[scale=0.5]{fig/acc-mse.pdf}
-    \caption{\textbf{Classification performance using selected RNA features.}  Comparison of CoRAE with other feature selection methods. Throughout the all values of $k$ tested on both mRNA(a) and lncRNA(c) CoRAE have highest classification accuracy. Similarly, it shows lowest reconstruction mean squared error on both mRNA(b) and lncRNA(d)}
-    \label{fig:acc-mse}
-  \end{figure*}
-  
+    \includegraphics[scale=0.45]{fig/acc-mRNA-lncRNA.pdf}
+    \caption{\textbf{Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}
+    \label{fig:acc-mRNA-lncRNA}
+\end{figure}
+\begin{figure*}[bt]
+  \centering
+  \includegraphics[scale=0.45]{fig/tSNE.pdf}
+    \caption{\textbf{Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}
+    \label{fig:tsne}
+\end{figure*}
 \section{Results}
 A series of experiments were conducted to compare the performance of CoRAE with other state-of-the-art feature selection methods such as LASSO and SVM-RFE.
 Each of these three methods were used to select features in the range of $10$ to $500$.
@@ -249,13 +290,6 @@ The CoRAE method is resilient to errors that occur during reconstruction using a
 In specific, for the case considering mRNA, CoRAE starts with a MSE of $38$ and quickly reduces to a value less than $10$ within the use of the top $100$ features. 
 The behaviour in classification is highly comparable in both coding and non-coding genes.
 However, mRNA expression performs slightly better than lncRNA as shown in Figure~\ref{fig:acc-mRNA-lncRNA}.
- 
-\begin{figure}[hbt]
-    \centering
-    \includegraphics[scale=0.45]{fig/acc-mRNA-lncRNA.pdf}
-    \caption{\textbf{Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}
-    \label{fig:acc-mRNA-lncRNA}
-\end{figure}
 
 \subsection{Selected Features Interpretation} \label{inter}
 With the use of CoRAE, we are able to identify important features while allowing the user to examine the relevance of each feature by observing the corresponding estimated concrete parameter $\alpha^{(i)}$.
@@ -265,21 +299,12 @@ It can also be observed that the  features selected using the CoRAE method carri
 The use of such features improves the prediction accuracy.
 The improved performance is highlighted in Figures~\ref{fig:acc-mse, fig:acc-mRNA-lncRNA, fig:tsne} with the CoRAE method succeeding in picking more significant features in comparison to the other state-of-the-art methods.
 
-
-
 \section{Discussion}
 In this paper, a new differentiable feature selection method via backpropagation is proposed.
 The proposed concrete relaxation auto-encoder uses re-parameterization and concrete random variable technique to allow gradients to pass through a layer that stochastically selects discrete original input features of higher significance.
 The randomness of the proposed method enables it to effectively search and converge to a user-defined number of original features which maximizing the objective function and minimizing the loss as discussed in section \ref{CoRAE}.
 The estimated parameters learned by the models can be further examined by the biologists and other stakeholders to interpret biological relevance as discussed in section \ref{inter}.
 The above mentioned characteristics of CoRAE provides it with a distinction from numerous other competing approaches which are based on regularization. 
-
-\begin{figure*}[bt]
-  \centering
-  \includegraphics[scale=0.45]{fig/tSNE.pdf}
-    \caption{\textbf{Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}
-    \label{fig:tsne}
-\end{figure*}
 
 Since CoRAE is built on top of a standard autoencoder architecture, it is easily scalable to a higher number of samples or dimensions.
 It is observed that the features selected by the CoRAE outperformed the ones from the competing methods.
