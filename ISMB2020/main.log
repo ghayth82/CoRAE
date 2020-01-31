@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  30 JAN 2020 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2020.1.14)  30 JAN 2020 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,6 +681,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--54
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\OT1/phv/b/n/9 Availability: \OT1/phv/m/n/9 Source code and an example dataset 
+are available at
+ []
+
+
 Underfull \hbox (badness 10000) detected at line 54
 []
  []
@@ -867,7 +873,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<fig/architecture.pdf, id=17, 696.6025pt x 432.61626pt>
+<fig/architecture.pdf, id=14, 696.6025pt x 432.61626pt>
 File: fig/architecture.pdf Graphic file (type pdf)
 
 <use fig/architecture.pdf>
@@ -885,7 +891,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 ...ns the same during train and test stage.}
+l.136 ...s the same during train and test stages.}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1040,9 +1046,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 T
-       he temperature of the random variable in the selector layer has a sig...
-
+l.164 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1059,9 +1064,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 T
-       he temperature of the random variable in the selector layer has a sig...
-
+l.164 
+      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1232,6 +1236,52 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+LaTeX Warning: Command \textasciitilde invalid in math mode on input line 183.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 183.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ...@spacefactor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.183 }
+       
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.183 }
+       
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ...}\accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.183 }
+       
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.183 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font cmex8!
 
 Underfull \hbox (badness 10000) detected at line 186
 [][]
@@ -1482,8 +1532,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290 
-      
+l.287 F
+       or all selected $k$ number of features, as depicted in Figure~\ref{fi...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1500,8 +1551,9 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290 
-      
+l.287 F
+       or all selected $k$ number of features, as depicted in Figure~\ref{fi...
+
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1584,11 +1636,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.311 ... 100 mRNA, b) t-SNE using top 100 lncRNA}
+l.311 ...100 mRNA, (b) t-SNE using top 100 lncRNA}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
@@ -1610,21 +1666,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.332 \section{Conclusion}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.339 
-      
+l.332 \section
+              {Conclusion}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1641,13 +1684,27 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.339 
-      
+l.332 \section
+              {Conclusion}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [6 <./fig/acc-mRNA-lncRNA.pdf>]
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 \section{Conclusion}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Underfull \hbox (badness 1122) in paragraph at lines 340--342
 \OT1/ptm/m/n/8 features to measure the prognostic capabilities. Similarly, path
 way
@@ -1680,7 +1737,11 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 28.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
@@ -1843,6 +1904,42 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (252.0pt too wide) has occurred while \output is active
+[][] 
+ []
+
+
+! LaTeX Error: Encoding scheme `LY1' unknown.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7 <./fig/tSNE.pdf>]
+
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1887,42 +1984,6 @@ Underfull \hbox (badness 2894) in paragraph at lines 145--149
 m/it/7 arXiv preprint
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 ...her, Perrot, and Duchesnay]{scikit-learn}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (252.0pt too wide) has occurred while \output is active
-[][] 
- []
-
-
-! LaTeX Error: Encoding scheme `LY1' unknown.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 ...her, Perrot, and Duchesnay]{scikit-learn}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[7 <./fig/tSNE.pdf>]
 
 ! LaTeX Error: Encoding scheme `LY1' unknown.
 
@@ -2059,52 +2120,52 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 145.72272pt
+Extra height:10.0pt when 217.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 146.72272pt
+Extra height:10.0pt when 218.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 147.72272pt
+Extra height:10.0pt when 219.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 148.72272pt
+Extra height:10.0pt when 220.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 149.72272pt
+Extra height:10.0pt when 221.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 150.72272pt
+Extra height:10.0pt when 222.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 151.72272pt
+Extra height:10.0pt when 223.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 152.72272pt
+Extra height:10.0pt when 224.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:10.0pt when 153.72272pt
+Extra height:10.0pt when 225.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Extra height:0.0pt when 154.72272pt
+Extra height:0.0pt when 226.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(2)Left:154.72272pt Right:138.44545pt Output:154.72272pt
+(2)Left:226.72272pt Right:210.44545pt Output:226.72272pt
 - LAST -
 Extra skip:0.0pt
-Left:154.72272pt
-Right:138.44545pt
-Output:154.72272pt
+Left:226.72272pt
+Right:210.44545pt
+Output:226.72272pt
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -2154,11 +2215,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4643 strings out of 494914
  54447 string characters out of 6180057
- 157668 words of memory out of 5000000
+ 158668 words of memory out of 5000000
  7816 multiletter control sequences out of 15000+600000
  61071 words of font info for 118 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 35i,15n,28p,1182b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,16n,28p,1182b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-d
@@ -2180,7 +2241,7 @@ sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8ac.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 1685847 bytes).
+Output written on main.pdf (8 pages, 1685558 bytes).
 PDF statistics:
  250 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -43,10 +43,10 @@ Florida International University, Miami, US
 In recent years, standard autoencoder and its variations have been used to select latent features to increase the classification performance. However, these methods are unable to provide which original features are contributing to these latent features. In this paper, we introduced a novel global feature selection method based on concrete relaxation discrete random variable selection,  which can efficiently identify a subset of most significant features that have an effective contribution in data reconstruction and classification. The proposed method is a variation of standard autoencoder where a concrete feature selection layer is added in the encoder and a standard neural network is used as a decoder. 
 %During training, a predefined temperature of the feature selection layer steadily decreases which allows the model to learn a user-specified number of discrete features. Also, during testing, only selected features can be used to reconstruct the input in the decoder.
 \\
-\textbf{Results:} We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes. Later, expression values of selected genes are used to train a linear classifier to distinguish 33 cancer types where features selected by CoRAE shows highest performance in terms of five evaluation matrices: accuracy 99\%, precision 98\%, recall 98\%, f1 score 99\%, and mean squared error 2.86. 
+\textbf{Results:} We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes. Later, expression values of selected genes are used to train a linear classifier to distinguish 33 cancer types where features selected by CoRAE shows highest performance in terms of five evaluation matrics: accuracy 99\%, precision 98\%, recall 98\%, f1 score 99\%, and mean squared error 2.86. 
 %The proposed method can be implemented by adding a few lines of code to the standard autoencoder.
 \\\\
-\textbf{Availability:} Source code and sample dataset is available at https://github.com/pwaabdullah/CoRAE\\
+\textbf{Availability:} Source code and an example dataset are available at https://github.com/pwaabdullah/CoRAE\\
 \textbf{Contact:} \href{amondal@fiu.edu}{amondal@fiu.edu}\\
 \textbf{Supplementary information:} Supplementary data are available at \textit{Bioinformatics}
 online.}
@@ -71,11 +71,11 @@ Also, the use of the gratuitous features can significantly impact the training s
 Overall, appropriate feature selection can provide the following advantages: (a)~reduced cost for computation and storage, (b)~adequate use of the available sample set for improved performance, (c)~improved timing for classification and thus predictions, (d)~easier interpretation of the data and thus the final predictions.
 
 
-Filter, wrapper, embedded methods are the three general classes/types of feature selection algorithms. 
+Filter, wrapper, embedded methods are the three general classes/types of feature selection techniques. 
 Numerous algorithms have been proposed for each of these types of feature selection methods. 
 The filtering method works by ranking the features using a statistical score that is assigned to each of them depending on their relevance to the class type. 
 In both univariate and multivariate filter methods, the interactions among features are disregarded in the selection process. 
-Studies like the ones in Pearson correlation coefficient(PC), t-statistics(TS) \citep{speed2003statistical}, F-Test \citep{ding2005minimum}, and ANOVA \citep{ding2015identification} are examples where the filtering method is used. 
+Studies like the ones in Pearson correlation coefficient(PCC), t-statistics(TS) \citep{speed2003statistical}, F-Test \citep{ding2005minimum}, and ANOVA \citep{ding2015identification} are examples where the filtering method is used. 
 It is observed that these methods are effective for selecting features in high-dimensional data because of the reduced computation expenses. 
 However, they fail to provide good accuracy as discussed in~\citep{sun2018cross}.
 
@@ -102,7 +102,7 @@ Our major contributions in this paper are two-fold: (a)~we created a new variant
 The results also show a significant increase in the classification performance up to 99\% as shown in Table~\ref{Tab:02}.
 Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingma2013auto}, and reparameterization technique to minimize the loss and reconstruction error from \citep{abid2019concrete}.
 \begin{table*}[hbt]
-\processtable{ \textbf{Sample Distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test\\\midrule
+\processtable{ \textbf{Sample distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test\\\midrule
 
 1	&	Adrenocortical Cancer	&	ACC	&	77	&	57	&	20	&	18	&	Lung Squamous Cell Carcinoma	&	LUSC	&	498	&	373	&	125	\\
 2	&	Bladder Cancer	&	BLCA	&	407	&	305	&	102	&	19	&	Mesothelioma	&	MESO	&	86	&	64	&	22	\\
@@ -127,19 +127,19 @@ Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingm
 \subsection{Coding and Non-coding Gene Expression}
 To validate the proposed idea, TCGA RNAseq cancer expression profiles and clinical data for $33$ cancers ($n$=9566 cancer patients) were downloaded from UCSC Xena database (https://xenabrowser.net). 
 %TCGA processed raw RNAseq data uses Illumina HiSeq 2000 RNA sequencing platform where per-gene normalized abundance estimation is calculated using the FPKM method. RNASeq normalized counts are then log transformed after adding a constant of $1$. Subsequently, UCSC re-processed this using GENCODE v23 transcript annotation to quantify protein coding and non-coding transcripts expression \citep{harrow2006gencode}. Coding genes refer to mRNA whereas non-coding genes refer to long non-coding RNA (lncRNA) in this experiment. To improve the focus on individual feature selection, we separated the mRNA and lncRNA expression from the combined database using the standard list of lncRNAs provided by TANRIC \citep{li2015tanric}. Another important reason for performing the experiments on individual RNA types is because of their varying expression levels.  The number of mRNA and lncRNA are 18731, 12309 respectively. We merged all the cancer samples for individual RNA types to aid further experimentation. Each row is mapped to a unique Ensemble ID, and each column mapped to a patient ID. Normal patients or RNA with missing data were removed from the original dataset. 
-This dataset contains expression profiles of around $60k$ RNA including coding and non-coding (miRNA, lncRNA, etc). In this study, expression profiles of mRNA and lncRNA are considered for model evaluations. The number of mRNA and lncRNA are 18,731 and 12,309 respectively. Due to their varying expression levels, a separate experiment was conducted for mRNA and lncRNA. This study was based on cancer patients only. So normal samples available in the same cancer are removed. The final dataset contains 9566 cancer patients. Each RNA expression was further processed using a min-max normalization method to achieve good training performance. 
+This dataset contains expression profiles of around $60k$ RNA including coding and non-coding (miRNA, lncRNA, etc). In this study, expression profiles of mRNA and lncRNA are considered for model evaluations. The number of mRNA and lncRNA are 18,731 and 12,309 respectively. Due to their varying expression levels, a separate experiment was conducted for mRNA and lncRNA. This study was based on cancer patients only. So normal samples available in the same cancer are removed. The final dataset contains 9566 cancer patients as shown in Table~\ref{Tab:01}. Each RNA expression was further processed using a min-max normalization method to achieve good training performance. 
 \begin{figure*}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/architecture.pdf}
     \caption{\textbf{Architecture of Concrete Relaxation Autoencoder.} Proposed feature selection architecture consists of an encoder and a decoder. The layer after input layer in encoder is called concrete feature selection layer shown in yellow. This layer has $k$ number of node where each node is for each feature to be selected. During the training stage, the $i^{th}$ node $v^{(i)}$ takes the value $x^Tf^{(i)}$.
 During testing stage, these weights are fixed and the element with the highest value is selected by the corresponding $i^{th}$ hidden node.
-The architecture of the decoder remains the same during train and test stage.}
+The architecture of the decoder remains the same during train and test stages.}
     \label{fig:architecture}
 \end{figure*}
 \subsection{Concrete Relaxation Autoencoder} \label{CoRAE}
 The concrete relaxation autoencoder (CoRAE) is a variation of the original autoencoder (AE) \citep{hinton2006reducing} which is used for dimension reduction. 
 It is a neural network that consists of two parts: (a)~an encoder that selects latent features and (b)~a decoder that uses selected features to reconstruct an output that matches the input. 
-Instead of using a sequence of fully connected layers in the encoder,  we propose a concrete relaxation based feature selection layer where the user can define the number of nodes (features), $k$. 
+Instead of using a sequence of fully connected layers in the encoder,  we propose a concrete relaxation based feature selection layer where the user can define the number of nodes (features), $k$ as shown in Figure~\ref{fig:architecture}. 
 This layer selects a probabilistic linear arrangement of input features while training, which converges to a discrete set of $k$ features by the end of training and during the testing. 
 
 The original features are selected based on the temperature of this layer which is tuned using an \emph{annealing schedule}. More specifically, the concrete selector layer identifies $k$ important features as the temperature decreases to zero. 
@@ -148,7 +148,7 @@ This simple neural network can be updated based on the characteristics of the da
 % ------read
 
 The layer that selects the features and highlighted in Figure \ref{fig:architecture} is called concrete variable selctor layer adopted from the concrete distribution~\citep{maddison2016concrete} and categorical representation \citep{jang2016categorical}. 
-Since backpropagation does not allow computation of the parameters` gradient through stochastic nodes of a standard autoencoder, Gumbel $softmax$ distribution $g$~\citep{gumbel1954statistical} is the right choice to pick samples $f$ from categorical distribution with class probabilities $\alpha_k$. 
+Since backpropagation does not allow computation of the parameters' gradient through stochastic nodes of a standard autoencoder, Gumbel $softmax$ distribution $g$~\citep{gumbel1954statistical} is the right choice to pick samples $f$ from categorical distribution with class probabilities $\alpha_k$. 
 \begin{equation}
 	f = \textbf{one-hot} \, (\argmax_k \, [g_k + log \, \alpha_k])
 \end{equation}
@@ -160,9 +160,9 @@ where $f_k$ refers to the $k_{th}$ element in a particular sample vector.
 With the limit $\tau \to 0$, the concrete variable uniformly progresses the discrete distribution, producing one-hot vector with $f_k = 1$ with a probabilistic chance of $\alpha _k/\sum_p \alpha _p$.
 The advantage of using a concrete random discrete variable is that it is differentiable $w.r.t$ $\alpha$ using the reparameterization technique as mentioned by \citep{kingma2013auto}.
 
-More concisely, the way original feature is selected using the concrete random variable as follows: a $z$-dimensional concrete random variable $f^{(i)}$ is sampled for each node of the selector layer with $k$ nodes where $i$ refers to the index of the node, $i \in \{1...k\}$. The output of the $i^{th}$ node is $ \textbf{x}.f^{(i)}$. Although it is a combination of the input feature`s weight, every node of the selector layer produces exactly one of the original input features in the limit $\tau \to 0$. After training the network, a discrete $\argmax$ layer is replaced with the concrete selector layer by which $x_{\argmax_j \; \alpha_j^{(i)}}$ is produced as an output of $i^{th}$ node during the testing phase. The value of $\alpha_i$ initially starts with a small positive random number so that it can explore various combinations of input features. As the model is being trained, the value of $\alpha_i$, in other words, the probability of class $i$ becomes more stable. As a result, the model reduces its stochasticity rather increases the confidence in drawing a particular subset of features. 
+More concisely, the way original feature is selected using the concrete random variable as follows: a $z$-dimensional concrete random variable $f^{(i)}$ is sampled for each node of the selector layer with $k$ nodes where $i$ refers to the index of the node, $i \in \{1...k\}$. The output of the $i^{th}$ node is $ \textbf{x}.f^{(i)}$. Although it is a combination of the input feature's weight, every node of the selector layer produces exactly one of the original input features in the limit $\tau \to 0$. After training the network, a discrete $\argmax$ layer is replaced with the concrete selector layer by which $x_{\argmax_j \; \alpha_j^{(i)}}$ is produced as an output of $i^{th}$ node during the testing phase. The value of $\alpha_i$ initially starts with a small positive random number so that it can explore various combinations of input features. As the model is being trained, the value of $\alpha_i$, in other words, the probability of class $i$ becomes more stable. As a result, the model reduces its stochasticity rather increases the confidence in drawing a particular subset of features. 
 
-The temperature of the random variable in the selector layer has a significant impact in forming the output of each node. Initially, when $\tau$ is high, search space is large since it considers a linear combination of all features. In contrast, the selector layer will not be able to search all possible combinations of features in low $\tau$ and thus, model converges to a bad local minimum. Instead of using a fixed temperature, a simple annealing scheduling scheme is used for every concrete variable. It starts with an user-defined high temperature ($\tau_s$) and steadily lowers the temperature until it touches the ending bound ($\tau_e$) by every epoch as follows: 
+The temperature of the random variable in the selector layer has a significant impact in forming the output of each node. Initially, when $\tau$ is high, search space is large since it considers a linear combination of all features. In contrast, the selector layer will not be able to search all possible combinations of features in low $\tau$ and thus, model converges to a bad local minimum. Effect of changing the temperature in feature selection is shown in Figure~\ref{fig:temp-change}. Instead of using a fixed temperature, a simple annealing scheduling scheme is used for every concrete variable. It starts with an user-defined high temperature ($\tau_s$) and steadily lowers the temperature until it touches the ending bound ($\tau_e$) by every epoch as follows: 
 \begin{equation}
 \tau_{(e)} = \tau_s(\tau_N/\tau_s)^{e/N}
 \end{equation}
@@ -174,11 +174,11 @@ where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number 
  \For{$i \; \in \{1 \; to \; z\}$}{
     Assign a positive value to each $\alpha^{(i)}$
  }
- \For{$ n \; \in \{1 \; to \; N\}$}{
-    Let $\tau_n$ = $\tau_s(\tau_N/\tau_s)^n/N$\\
+ \For{$ e \; \in \{1 \; to \; N\}$}{
+    Let $\tau_e$ = $\tau_s(\tau_N/\tau_s)^e/N$\\
      \For{$ k \; \in \{1 \; to \; z\}$}{
-        sample $f^{(k)}$ \textasciitilde \, $Concrete \; (\alpha^{(k)}, \tau)$\\
-        let $X^{(k)}$ = $X.f^{(k)}$ where  {$f^{(k)}$ =  argmax($\alpha^{(k)}$)}\\ 
+        sample $f^{(k)} \textasciitilde \, Concrete \; (\alpha^{(k)}, \tau)$\\
+        let $X^{(k)}$ = $X.f^{(k)}$, where  {$f^{(k)}$ =  argmax($\alpha^{(k)}$)}\\ 
  }
 }
  \caption{Concrete relaxation autoencoder}
@@ -187,7 +187,7 @@ where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number 
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/temp-change.pdf}
-    \caption{\textbf{Effect of temperature in reducing search space.} For example, at starting temperature $\tau_0$, the number of input features is 10 and number of feature to be selected $k=3$, at the next temerature $\tau_1$, the number of posibble features reduced to 6, finally at ending $\tau_{stop}$ after some epochs, the search space further reduces to 3 which is equal to the $k$}
+    \caption{\textbf{Effect of temperature in reducing search space.} For example, at starting temperature $\tau_s$, the number of input features is 10 and the number of features to be selected $k$ is 3, at the next epoch when the temperature is $\tau_1$, the number of possible features reduces to 6. After some epochs, when the temperature reaches to its lower bound $\tau_{stop}$, the number of features further reduces to 3 which is equal to the $k$}
     \label{fig:temp-change}
 \end{figure}
 \begin{figure}[h!]
@@ -206,7 +206,7 @@ where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number 
 %\subsubsection{Feature Selection}
 The encoder of the Concrete relaxation autoencoder (CoRAE) architecture is constructed with a hidden layer of $k$ nodes where $k$ is the number of genes selected. The decoder, on the other hand, is consisting of one hidden layer with $3k/2$ nodes. 
 The number of nodes in this layer is tuned in a range of $[4k/7, 2k/5, 3k/2]$. 
-Adam optimizer with a learning rate of $10^-3$ is used for all the experiments. 
+Adam optimizer with a learning rate of $0.001$ is used for all the experiments. 
 The starting temperature of the CoRAE was set to $10$ and it ends at $0.01$. 
 To avoid overfitting, the dataset is split into the train and test set according to $75/25$ ratio. 
 The training set is used to estimate the learning parameters and the test set is used for performance evaluation. 
@@ -222,8 +222,8 @@ GridSearch algorithm is used to estimate the best set of parameters for SVM.
 In every iteration of RFE, the number of dropped features is set to 100. 
 
 We extract a subset of features by varying $k$ from 10 to 500. For the comparison to be fair and along the same grounds with CoRAE, the same number of genes are selected using LASSO and SVM-RFE. 
-The dataset with reduced number of features (expression of selected genes) to the SVM for classifying 33 cancer types on both mRNA and lncRNA expression. Similarly, to reconstruct all the input features, we trained a linear regressor with no regularization and measure the reconstruction mean square error. 
-LASSO and SVM-RFE are developed using a scikit-learn framework~\citep{scikit-learn} whereas CoRAE is built using Google-developed Tensorflow \citep{tensorflow2015-whitepaper} based deep learning framework Keras~\citep{chollet2015keras}. Experiments are parallelized on NVIDIA Quadro K620 GPU with 384 cores and 2GB memory devices. Five different evaluation metrics have been used to record the classification and reconstruction performance such as accuracy, precision, recall, f1 score, and mean squared error (MSE). 
+The dataset with reduced number of features (expression of selected genes) is passed to the SVM for classifying 33 cancer types. Similarly, to reconstruct all the input features, we trained a linear regressor with no regularization and measure the reconstruction mean square error. 
+LASSO and SVM-RFE are developed using the scikit-learn framework~\citep{scikit-learn} whereas CoRAE is built using Google-developed Tensorflow \citep{tensorflow2015-whitepaper} based deep learning framework Keras~\citep{chollet2015keras}. Experiments are parallelized on NVIDIA Quadro K620 GPU with 384 cores and 2GB memory devices. Five different evaluation metrics have been used to record the classification and reconstruction performance such as accuracy, precision, recall, f1 score, and mean squared error (MSE). 
 
 Accuracy is the number of correct predictions made by the model over all kinds of predictions made. 
 True positives(TP) and True Negatives(TN) are the correct predictions. 
@@ -243,10 +243,10 @@ True positives(TP) and True Negatives(TN) are the correct predictions.
 	\begin{equation}
         F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}
     \end{equation}
-    Mean squared error (MSE) is the average of $(\frac{1}{n} \sum _{i=1} ^n)$ of the square of the errors $(Y_i - Y'_i)$ where $Y_i$ is a true label and $Y'_i$ is a predicted label. All performance metrics is measured on the predicted labels and true labels of independent test samples. 
+    Mean squared error (MSE) is the average of $(\frac{1}{n} \sum _{i=1} ^n)$ of the square of the errors $(Y_i - Y'_i)$ where $Y_i$ is a true label and $Y'_i$ is a predicted label. All performance metrics are measured on the predicted labels and true labels of independent test samples. 
 
-Top genes can be selected based on two criteria - a) classification accuracy needs to be higher,
-and b) the number of genes should be as less as possible so that biologists can conduct a wet lab experiment
+Top genes can be selected based on two criteria~(a) classification accuracy needs to be higher,
+and~(b) the number of genes should be as less as possible so that biologists can conduct a wet lab experiment
 easily. The capabilities of selected genes in pan-cancer classification is visually validated using unsupervised visualization technique t-SNE \citep{maaten2008visualizing}.
 %Survival analysis is conducted for testing the prognostic capabilities of selected gene set. 
 \begin{table*}[hbt]
@@ -279,7 +279,7 @@ easily. The capabilities of selected genes in pan-cancer classification is visua
 A series of experiments were conducted to compare the performance of CoRAE with other state-of-the-art feature selection methods such as LASSO and SVM-RFE.
 Each of these three methods was used to select features in the range of $10$ to $500$.
 These features are then used to train a linear classifier SVM to classify 33 cancer types from expression profiles of coding and non-coding RNA separately. 
-Figure~\ref{fig:acc-mse} shows classification performance of using selected features. It can be observed that the scale used in the x-axis to depict the number of features does not increase with a consistent step size.
+Table~\ref{Tab:02} and Figure~\ref{fig:acc-mse} show classification performance of using selected features. It can be observed that the scale used in the x-axis to depict the number of features does not increase with a consistent step size.
 The initial stages of the experiments were performed with a smaller subset of the selected features as we wanted to understand the performance of the models being compared.
 The optimal classification performance was observed about $100$ features were used.
 Beyond this, the trend continues as shown in the figure. We continued to monitor the performance of the models until $500$ features to check for the best possible subset of features. 
@@ -289,13 +289,13 @@ It can be observed that even with a smaller number of significant features (say 
 The trend remains the same with the increase of number of features. With only $50$ features, accuracy of CoRAE is more than 90\%.
 
 The CoRAE method is resilient to errors that occur during reconstruction using a small feature set. In comparison, this error is more pronounced in the other competing methods.
-In case of mRNA, CoRAE starts with an MSE of $38$ and quickly reduces to a value of less than $10$ within the use of the top $100$ features. 
+In case of mRNA, CoRAE starts with an MSE of $38$ and quickly reduces to a value of less than $10$ within the use of the top $100$ features as shown in Figure~\ref{fig:acc-mse}. 
 The behavior in classification is highly comparable in both coding and non-coding genes.
-However, mRNA expression performs slightly better than lncRNA as shown in Figure~\ref{fig:acc-mRNA-lncRNA}.
+However, coding gene expressions perform slightly better than non-coding gene expression as shown in Figure~\ref{fig:acc-mRNA-lncRNA}.
   \begin{figure}[hbt]
     \centering
     \includegraphics[scale=0.45]{fig/acc-mRNA-lncRNA.pdf}
-    \caption{\textbf{Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, mRNA expression shows slightly better classification accuracy over lncRNA expression. Here, these features has been seelcted using proposed method only.}
+    \caption{\textbf{Classification accuracy comparison between coding and non-coding genes expression.} Across all the $k$, coding gene expressions show slightly better classification accuracy over non-coding gene expressions. Here, these features has been seelcted using proposed method only.}
     \label{fig:acc-mRNA-lncRNA}
 \end{figure}
 \subsection{Selected Features Interpretation} \label{inter}
@@ -308,7 +308,7 @@ Figure \ref{fig:tsne}, highlights how the top $100$ mRNA or lncRNA, selected usi
 \begin{figure*}[hbt]
   \centering
   \includegraphics[scale=0.45]{fig/tSNE.pdf}
-    \caption{\textbf{Visualization of 33 different cancer types using top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type. a) t-SNE using top 100 mRNA, b) t-SNE using top 100 lncRNA}
+    \caption{\textbf{Visualization of 33 different cancer types based on top-100 CoRAE features.} Here, we show the t-SNE representation of 33 cancer samples using selected features. Each dot represents a cancer sample and each color represents a cancer type (a) t-SNE using top 100 mRNA, (b) t-SNE using top 100 lncRNA}
     \label{fig:tsne}
 \end{figure*}
 \section{Discussion}
