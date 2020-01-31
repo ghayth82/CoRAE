@@ -18,17 +18,17 @@
 \subtitle{Subject Section}
 
 \title[short Title]{
-CoRAE: Concreate Relaxation Autoencoder for Differentiable Gene Selection and Pan-Cancer Classification
+CoRAE: Concrete Relaxation Autoencoder for Differentiable Gene Selection and Pan-Cancer Classification
 % Pan-Cancer Feature Selection and Classification Reveals Key RNAs for Cancers
 % Epigenetic Landscape Using Pan-Cancer Feature Selection and Classification
 }
-\author[Sample \textit{et~al}.]{Abdullah Al Mamun, Ananda Mondal*}
+\author[Sample \textit{et~al}.]{Abdullah Al Mamun, Ananda Mohan Mondal*}
 % $^{\text{\sfb 1,}*}$, Co-Author\,$^{\text{\sfb 2}}$ and Co-Author\,$^{\text{\sfb 2,}*}$}
 
 \address{
 % $^{\text{\sf 1}}$
 School of Computing and Information Sciences \\
-Florida International University, Miami, US
+Florida International University, Miami, USA
 % $^{\text{\sf 2}}$
 % Department, Institution, City, Post Code,Country.
 }
@@ -43,7 +43,7 @@ Florida International University, Miami, US
 In recent years, standard autoencoder and its variations have been used to select latent features to increase the classification performance. However, these methods are unable to provide which original features are contributing to these latent features. In this paper, we introduced a novel global feature selection method based on concrete relaxation discrete random variable selection,  which can efficiently identify a subset of most significant features that have an effective contribution in data reconstruction and classification. The proposed method is a variation of standard autoencoder where a concrete feature selection layer is added in the encoder and a standard neural network is used as a decoder. 
 %During training, a predefined temperature of the feature selection layer steadily decreases which allows the model to learn a user-specified number of discrete features. Also, during testing, only selected features can be used to reconstruct the input in the decoder.
 \\
-\textbf{Results:} We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes. Later, expression values of selected genes are used to train a linear classifier to distinguish 33 cancer types where features selected by CoRAE shows highest performance in terms of five evaluation metrics: accuracy 99\%, precision 98\%, recall 98\%, f1 score 99\%, and mean squared error 2.86. 
+\textbf{Results:} We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes. Later, expression values of selected genes are used to train a linear classifier to distinguish 33 cancer types where features selected by CoRAE shows highest performance in terms of four evaluation metrics: accuracy 99\%, precision 98\%, recall 98\%, and f1 score 99\%.
 %The proposed method can be implemented by adding a few lines of code to the standard autoencoder.
 \\\\
 \textbf{Availability:} Source code and a sample dataset are available at https://github.com/pwaabdullah/CoRAE\\
@@ -98,8 +98,7 @@ However, these methods do not provide the original features of the dataset makin
 
 
 In this paper, we propose a novel feature subset selection method that increases the power of a standard deep autoencoder for differentiable feature selection. 
-Our major contributions in this paper are two-fold: (a)~we created a new variant of the standard autoencoder by introducing the use of a concrete relaxation discrete random variable selection layer for encoding that allows selection of user-defined number of original features, (b)~evaluation of the performance of the proposed approach in classifying 33 cancers by selecting features from cancer patients only. (c)~modifying the codebase of a standard autoencoder to realize the proposed approach. Our initial evaluations show the improved performance of the proposed approach in comparison to the existing state-of-the-art methods in identifying the top 100 coding and non-coding genes that can distinguish 33 different types of cancers.
-The results also show a significant increase in the classification performance up to 99\% as shown in Table~\ref{Tab:02}.
+Our major contributions in this paper are two-fold: (a)~we created a new variant of the standard autoencoder by introducing the use of a concrete relaxation discrete random variable selection layer for encoding that allows selection of user-defined number of original features, (b)~classification of 33 different cancers by selecting features from cancer patients only. (c)~modifying the codebase of a standard autoencoder to realize the proposed approach. Our evaluation shows the improved performance of the proposed approach in comparison to the existing state-of-the-art methods LASSO and SVM-RFE.
 Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingma2013auto}, and reparameterization technique to minimize the loss and reconstruction error from \citep{abid2019concrete}.
 \begin{table*}[hbt]
 \processtable{ \textbf{Sample distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test\\\midrule
@@ -127,7 +126,7 @@ Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingm
 \subsection{Coding and Non-coding Gene Expression}
 To validate the proposed idea, TCGA RNAseq cancer expression profiles and clinical data for $33$ cancers ($n$=9566 cancer patients) were downloaded from UCSC Xena database (https://xenabrowser.net). 
 %TCGA processed raw RNAseq data uses Illumina HiSeq 2000 RNA sequencing platform where per-gene normalized abundance estimation is calculated using the FPKM method. RNASeq normalized counts are then log transformed after adding a constant of $1$. Subsequently, UCSC re-processed this using GENCODE v23 transcript annotation to quantify protein coding and non-coding transcripts expression \citep{harrow2006gencode}. Coding genes refer to mRNA whereas non-coding genes refer to long non-coding RNA (lncRNA) in this experiment. To improve the focus on individual feature selection, we separated the mRNA and lncRNA expression from the combined database using the standard list of lncRNAs provided by TANRIC \citep{li2015tanric}. Another important reason for performing the experiments on individual RNA types is because of their varying expression levels.  The number of mRNA and lncRNA are 18731, 12309 respectively. We merged all the cancer samples for individual RNA types to aid further experimentation. Each row is mapped to a unique Ensemble ID, and each column mapped to a patient ID. Normal patients or RNA with missing data were removed from the original dataset. 
-This dataset contains expression profiles of around $60k$ RNA including coding and non-coding (miRNA, lncRNA, etc). In this study, expression profiles of mRNA and lncRNA are considered for model evaluations. The number of mRNA and lncRNA are 18,731 and 12,309 respectively. Due to their varying expression levels, a separate experiment was conducted for mRNA and lncRNA. This study was based on cancer patients only. So normal samples available in the same cancer are removed. The final dataset contains 9566 cancer patients as shown in Table~\ref{Tab:01}. Each RNA expression was further processed using a min-max normalization method to achieve good training performance. 
+This dataset contains expression profiles of around $60k$ RNAs including coding and non-coding (miRNA, lncRNA, etc). In this study, expression profiles of mRNA and lncRNA are considered for model evaluation. The number of mRNA and lncRNA are 18,731 and 12,309 respectively. Due to their varying expression levels, separate experiments were conducted for mRNA and lncRNA. This study was based on cancer patients only. So normal samples available in the same cancer are removed. The final dataset contains 9566 cancer patients as shown in Table~\ref{Tab:01}. Each RNA expression was further processed using a min-max normalization method to achieve good training performance. 
 \begin{figure*}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/architecture.pdf}
@@ -282,10 +281,10 @@ These features are then used to train a linear classifier SVM to classify 33 can
 Table~\ref{Tab:02} and Figure~\ref{fig:acc-mse} show classification performance of using selected features. It can be observed that the scale used in the x-axis to depict the number of features does not increase with a consistent step size.
 The initial stages of the experiments were performed with a smaller subset of the selected features as we wanted to understand the performance of the models being compared.
 The optimal classification performance was observed about $100$ features were used.
-Beyond this, the trend continues as shown in the figure. We continued to monitor the performance of the models until $500$ features to check for the best possible subset of features. 
+Beyond this, the trend continues as shown in Figure \ref{fig:acc-mse}. We continued to monitor the performance of the models until $500$ features to check for the best possible subset of features. 
 
 For all selected $k$ number of features, as depicted in Figure~\ref{fig:acc-mse}, CoRAE has the highest accuracy and lowest error for both mRNA and lncRNA expression.
-It can be observed that even with a smaller number of significant features (say $10$), the accuracy of CoRAE is close to 80\% (mRNA) and 70\% (lncRNA) whereas LASSO and SVM-RFE shows poor results for the same number of features.
+It can be observed that even with a smaller number of significant features (say $10$), the accuracy of CoRAE is close to 80\%  for mRNA whereas LASSO (55\% accuracy) and SVM-RFE (63\% accuracy) shows poor results for the same number of features.
 The trend remains the same with the increase of number of features. With only $50$ features, accuracy of CoRAE is more than 90\%.
 
 The CoRAE method is resilient to errors that occur during reconstruction using a small feature set. In comparison, this error is more pronounced in the other competing methods.
@@ -342,7 +341,7 @@ Similarly, pathway analysis of selected coding and non-coding genes will be anal
 \section*{Acknowledgements}
 We are grateful to Sanjeev Kaushik Ramani for helpful contribution in writing.
 % \section*{Funding}
-This research is partially funded by the US National Science Foundation CAREER award \#1651917 (transferred to \#1901628) to AMM.
+This research is partially funded by the National Science Foundation CAREER award \#1651917 (transferred to \#1901628) to AMM.
 
 \bibliographystyle{natbib}
 %\bibliographystyle{achemnat}
