@@ -46,7 +46,7 @@ In recent years, standard autoencoder and its variations have been used to selec
 \textbf{Results:} We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes. Later, expression values of selected genes are used to train a linear classifier to distinguish 33 cancer types where features selected by CoRAE shows highest performance in terms of five evaluation metrics: accuracy 99\%, precision 98\%, recall 98\%, f1 score 99\%, and mean squared error 2.86. 
 %The proposed method can be implemented by adding a few lines of code to the standard autoencoder.
 \\\\
-\textbf{Availability:} Source code and an example dataset are available at https://github.com/pwaabdullah/CoRAE\\
+\textbf{Availability:} Source code and a sample dataset are available at https://github.com/pwaabdullah/CoRAE\\
 \textbf{Contact:} \href{amondal@fiu.edu}{amondal@fiu.edu}\\
 \textbf{Supplementary information:} Supplementary data are available at \textit{Bioinformatics}
 online.}
@@ -187,7 +187,7 @@ where $T_{(e)}$ is the temperature at epoch $e$, $N$ refers to the total number 
 \begin{figure}[h!]
     \centering
     \includegraphics[scale=0.5]{fig/temp-change.pdf}
-    \caption{\textbf{Effect of temperature in reducing search space.} For example, at starting temperature $\tau_s$, the number of input features is 10 and the number of features to be selected $k$ is 3, at the next epoch when the temperature is $\tau_1$, the number of possible features reduces to 6. After some epochs, when the temperature reaches to its lower bound $\tau_{stop}$, the number of features further reduces to 3 which is equal to the $k$}
+    \caption{\textbf{Effect of temperature in reducing search space.} For example, at starting temperature $\tau_s$, the number of input features is 10 and the number of features to be selected $k$ is 3, at the next epoch when the temperature is $\tau_1$, the number of possible features reduces to 6. After some epochs, when the temperature reaches to its lower bound $\tau_{stop}$, the number of features further reduces to 3 which is equal to $k$}
     \label{fig:temp-change}
 \end{figure}
 \begin{figure}[h!]
@@ -257,21 +257,21 @@ easily. The capabilities of selected genes in pan-cancer classification is visua
 \midrule
 \#Feature selected, $k$ & Method Name	&	Accuracy	&	Precision	&	Recall	&	F1	& MSE &	Accuracy	&	Precision	&	Recall	&	F1	& MSE	\\
 \midrule
-\multirow{3}{*}{10} &	LASSO	&	0.55	&	0.51	&	0.52	&	0.51	&	66.02	&	0.55	&	0.51	&	0.5	&	0.52	&	81.56	\\
-&	SVM-RFE	&	0.63	&	0.6	&	0.53	&	0.53	&	64.69	&	0.5	&	0.4	&	0.36	&	0.35	&	88.19	\\
-&	CoRAE	&	0.79	&	0.73	&	0.67	&	0.68	&	36.07	&	0.7	&	0.6	&	0.58	&	0.57	&	60.11	\\
+\multirow{3}{*}{10} &	LASSO	&	0.55	&	0.51	&	0.52	&	0.51	&	66.02	&	0.55	&	0.51	&	0.50	&	0.52	&	81.56	\\
+&	SVM-RFE	&	0.63	&	0.6	&	0.53	&	0.53	&	64.69	&	0.50	&	0.40	&	0.36	&	0.35	&	88.19	\\
+&	CoRAE	&	0.79	&	0.73	&	0.67	&	0.68	&	36.07	&	0.70	&	0.60	&	0.58	&	0.57	&	60.11	\\
 \midrule
 
 
-\multirow{3}{*}{100} &	LASSO	&	0.93	&	0.89	&	0.89	&	0.89	&	10.4	&	0.92	&	0.9	&	0.9	&	0.89	&	12.83	\\
+\multirow{3}{*}{100} &	LASSO	&	0.93	&	0.89	&	0.89	&	0.89	&	10.4	&	0.92	&	0.90	&	0.90	&	0.89	&	12.83	\\
 &	SVM-RFE	&	0.92	&	0.88	&	0.88	&	0.88	&	15.04	&	0.91	&	0.87	&	0.87	&	0.87	&	14.36	\\
-&	CoRAE	&	0.96	&	0.95	&	0.95	&	0.95	&	6.4	&	0.94	&	0.93	&	0.91	&	0.92	&	11.37	\\
+&	CoRAE	&	0.96	&	0.95	&	0.95	&	0.95	&	6.40	&	0.94	&	0.93	&	0.91	&	0.92	&	11.37	\\
 
 \midrule
 
 \multirow{3}{*}{500} &	LASSO	&	0.96	&	0.94	&	0.94	&	0.94	&	6.79	&	0.94	&	0.92	&	0.92	&	0.92	&	11.19	\\
 &	SVM-RFE	&	0.95	&	0.93	&	0.93	&	0.93	&	9.47	&	0.94	&	0.92	&	0.91	&	0.91	&	10.01	\\
-&	CoRAE	&	\textbf{0.99}	&	\textbf{0.98}	&	\textbf{0.98	}&	\textbf{0.98}	&	\textbf{2.86}	&	0.96	&	0.94	&	0.93	&	0.94	&	7.7	\\
+&	CoRAE	&	\textbf{0.99}	&	\textbf{0.98}	&	\textbf{0.98	}&	\textbf{0.98}	&	\textbf{2.86}	&	0.96	&	0.94	&	0.93	&	0.94	&	7.70	\\
 \botrule
 \end{tabular}}{}
 \end{table*}
