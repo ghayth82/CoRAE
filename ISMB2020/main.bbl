@@ -58,13 +58,6 @@ Guyon, I., Weston, J., Barnhill, S., and Vapnik, V. (2002).
   machines.
 \newblock {\em Machine learning\/}, {\bf 46}(1-3), 389--422.
 
-\bibitem[Harrow {\em et~al.}(2006)Harrow, Denoeud, Frankish, Reymond, Chen,
-  Chrast, Lagarde, Gilbert, Storey, Swarbreck, {\em et~al.}]{harrow2006gencode}
-Harrow, J., Denoeud, F., Frankish, A., Reymond, A., Chen, C.-K., Chrast, J.,
-  Lagarde, J., Gilbert, J.~G., Storey, R., Swarbreck, D., {\em et~al.} (2006).
-\newblock Gencode: producing a reference annotation for encode.
-\newblock {\em Genome biology\/}, {\bf 7}(1), S4.
-
 \bibitem[Hinton and Salakhutdinov(2006)Hinton and
   Salakhutdinov]{hinton2006reducing}
 Hinton, G.~E. and Salakhutdinov, R.~R. (2006).
@@ -106,14 +99,6 @@ Le, T.~T., Urbanowicz, R.~J., Moore, J.~H., and McKinney, B.~A. (2019).
 \newblock Statistical inference relief (stir) feature selection.
 \newblock {\em Bioinformatics\/}, {\bf 35}(8), 1358--1365.
 
-\bibitem[Li {\em et~al.}(2015)Li, Han, Roebuck, Diao, Liu, Yuan, Weinstein, and
-  Liang]{li2015tanric}
-Li, J., Han, L., Roebuck, P., Diao, L., Liu, L., Yuan, Y., Weinstein, J.~N.,
-  and Liang, H. (2015).
-\newblock Tanric: an interactive open platform to explore the function of
-  lncrnas in cancer.
-\newblock {\em Cancer research\/}, {\bf 75}(18), 3728--3737.
-
 \bibitem[Liang {\em et~al.}(2018)Liang, Ma, Yang, Wang, and
   Ma]{liang2018review}
 Liang, S., Ma, A., Yang, S., Wang, Y., and Ma, Q. (2018).
@@ -148,9 +133,11 @@ Maddison, C.~J., Mnih, A., and Teh, Y.~W. (2016).
 \newblock {\em arXiv preprint arXiv:1611.00712\/}.
 
 \bibitem[Mamun and Mondal(2019)Mamun and Mondal]{abdullah2019}
-Mamun, A.~A. and Mondal, A. (2019).
+Mamun, A.~A. and Mondal, A.~M. (2019).
 \newblock Feature selection and classification reveal key lncrnas for multiple
   cancers.
+\newblock {\em 2019 IEEE International Conference on Bioinformatics and
+  Biomedicine (IEEE BIBM)\/}, pages 2825--2831.
 
 \bibitem[Pedregosa {\em et~al.}(2011)Pedregosa, Varoquaux, Gramfort, Michel,
   Thirion, Grisel, Blondel, Prettenhofer, Weiss, Dubourg, Vanderplas, Passos,
