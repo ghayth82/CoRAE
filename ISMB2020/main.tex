@@ -91,14 +91,14 @@ Well-known example of the embedded method are LASSO~\citep{tibshirani1996regress
 %In general, feature selection methods are useful to get a good insight about large and complex datasets which can simplify the learning process of any machine learning algorithm. 
 In general, the use of feature selection is worthwhile when using the whole set of features is difficult or the cost of execution is high. 
 As an example, the gene expression dataset contains more than 60 thousand features with a very low number of samples. 
-Consequently, it is important to answer the impending questions: \textit{Is it possible to identify important genes whose expressions can classify disease or cancer types?}. 
+Consequently, it is important to answer the impending questions: \textit{Is it possible to identify important genes whose expressions can classify disease or cancer types?}
 Feature selection works differently compared to the standard dimension reduction techniques such as principal component analysis (PCA)~\citep{hotelling1933analysis}, and autoencoders~\citep{hinton2006reducing}. 
 The above-mentioned methods can preserve maximum variance with a highly reduced number of features. 
 However, these methods do not provide the original features of the dataset making it difficult to eliminate redundant or irrelevant features from the dataset. 
 
 
 In this paper, we propose a novel feature subset selection method that increases the power of a standard deep autoencoder for differentiable feature selection. 
-Our major contributions in this paper are two-fold: (a)~we created a new variant of the standard autoencoder by introducing the use of a concrete relaxation discrete random variable selection layer for encoding that allows selection of user-defined number of original features, (b)~classification of 33 different cancers by selecting features from cancer patients only. (c)~modifying the codebase of a standard autoencoder to realize the proposed approach. Our evaluation shows the improved performance of the proposed approach in comparison to the existing state-of-the-art methods LASSO and SVM-RFE.
+Our major contributions in this paper are two-fold: (a)~we created a new variant of the standard autoencoder by introducing the use of a concrete relaxation discrete random variable selection layer for encoding that allows selection of user-defined number of original features, (b)~classification of 33 different cancers by selecting features from cancer patients only, and (c)~modifying the codebase of a standard autoencoder to realize the proposed approach. Our evaluation shows the improved performance of the proposed approach in comparison to the existing state-of-the-art methods, LASSO and SVM-RFE.
 Idea of concrete distribution is adapted from \citep{maddison2016concrete, kingma2013auto}, and reparameterization technique to minimize the loss and reconstruction error from \citep{abid2019concrete}.
 \begin{table*}[hbt]
 \processtable{ \textbf{Sample distribution for 33 cancers along with 75-25 split for training and testing.}  \label{Tab:01}} {\begin{tabular}{@{}llllll|llllll@{}}\toprule Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test	&	Sl	&	Cancer site name	&	Acronym	&	\#Sample	&	\#Train	&	\#Test\\\midrule
