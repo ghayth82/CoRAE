@@ -8,7 +8,8 @@ To install, use `$ pip install corae`
 
 ## Example
 Below code will run on a sample gene expression dataset and return top 50 genes
-`from corae import CoRAEFeatureSelector
+```python 
+from corae import CoRAEFeatureSelector
 from keras.layers import Dense, Dropout, LeakyReLU
 import numpy as np
 import pnadas as pd
@@ -36,5 +37,5 @@ coef = pd.Series(model.get_support(), index = X.columns)
 coef = coef[(coef != 0)].index.tolist()
 df_l = pd.DataFrame(data=coef, columns=['features'])
 df_l.to_csv(PATH+'CoRAE-'+str(k)+'.csv', index=False)
-print(str(len(coef)), 'features has been selected by CoRAE and saved successfully')`
+print(str(len(coef)), 'features has been selected by CoRAE and saved successfully')```
 
