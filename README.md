@@ -9,34 +9,37 @@ To install, use `$ pip install CoRAE`
 ## Example
 Below code will run on a sample gene expression dataset and return top 50 genes
 ```python 
-from corae import CoRAEFeatureSelector
+from CoRAE import CoRAEFeatureSelector
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split 
 from keras.layers import Dense, Dropout, LeakyReLU
-import numpy as np
-import pnadas as pd
 
-df = pd.read_csv("gene-expression.csv")
-X = df.iloc[:,1:-1]
-y = df.iloc[:,-1]
-X_norm = MinMaxScaler().fit_transform(X)
-x_train, x_test, y_train, y_test = train_test_split(X_norm, y, test_size=0.25, random_state=31)
+def fetureByCoRAE(k, NodeInFinalLayer):
+    def CoRAE_decoder(x):
+        x = Dense(150)(x)
+        x = LeakyReLU(0.2)(x)
+        x = Dropout(0.1)(x)
+        x = Dense(150)(x)
+        x = LeakyReLU(0.2)(x)
+        x = Dropout(0.1)(x)
+        x = Dense(NodeInFinalLayer)(x)
+        return x
+    model = CoRAEFeatureSelector(K = k, number_try=1, number_epoch = 10, decoder_function = CoRAE_decoder)
+    model.fit(x_train, x_train, x_test, x_test)
+    model.get_feature_support(indxs = True)
+    coef = pd.Series(model.get_feature_support(), index = X.columns)
+    coef = coef[(coef != 0)].index.tolist()
+    df_l = pd.DataFrame(data=coef, columns=['Gene-Ids'])
+#     df_l.to_csv(PATH+'CoRAE-'+str(k)+'.csv', index=False)
+    print(str(len(coef)), 'features has been selected by CAE and saved successfully')
+    print(df_l)
 
-def decoder(x):
-    x = Dense(150)(x)
-    x = LeakyReLU(0.2)(x)
-    x = Dropout(0.1)(x)
-    x = Dense(150)(x)
-    x = LeakyReLU(0.2)(x)
-    x = Dropout(0.1)(x)
-    x = Dense(NodeInFinalLayer)(x)
-    return x
-
-model = CoRAEFeatureSelector(K = 50, output_function = decoder, num_epochs = 100, tryout_limit=2)
-model.fit(x_train, x_train, x_test, x_test)
-model.get_support(indices = True)
-coef = pd.Series(model.get_support(), index = X.columns)
-coef = coef[(coef != 0)].index.tolist()
-df_l = pd.DataFrame(data=coef, columns=['features'])
-df_l.to_csv(PATH+'CoRAE-'+str(k)+'.csv', index=False)
-print(str(len(coef)), 'features has been selected by CoRAE and saved successfully')
+def main():
+    nFeature = 1022  # number of original features
+    k=10             # number of feature to be selected
+    fetureByCoRAE(k, nFeature)
+if __name__== "__main__":
+    main()
 ```
 
