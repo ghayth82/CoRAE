@@ -5,7 +5,7 @@ with open("README.md", "r") as txt:
 
 setuptools.setup(
     name="CoRAE",
-    version="1.0",
+    version="0.0.1",
     author="Abdullah Al Mamun",
     author_email="aamcse@gmail.com",
     description="A feature selection framwork",
