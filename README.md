@@ -4,7 +4,7 @@ CoRAE is a novel global feature selection method based on concrete relaxation di
 We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes.
 
 ## Installation 
-To install, use `$ pip install corae`
+To install, use `$ pip install CoRAE`
 
 ## Example
 Below code will run on a sample gene expression dataset and return top 50 genes
