@@ -4,7 +4,7 @@ with open("README.md", "r") as txt:
     full_description = txt.read()
 
 setuptools.setup(
-    name="CoRAE",
+    name="corae",
     version="0.0.1",
     author="Abdullah Al Mamun",
     author_email="aamcse@gmail.com",
