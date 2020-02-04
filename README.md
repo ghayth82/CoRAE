@@ -1,10 +1,10 @@
-# CoRAE: Concreate Relaxation Autoencoder for Differentiable Gene Selection and Pan-Cancer Classification
+# CoRAE: Concrete Relaxation Autoencoder for Differentiable Gene Selection and Pan-Cancer Classification
 CoRAE is a novel global feature selection method based on concrete relaxation discrete random variable selection, which can efficiently identify a subset of most significant features that have an effective contribution in data reconstruction and classification. The proposed method is a variation of standard autoencoder where a concrete feature selection layer is added in the encoder and a standard neural network is used as a decoder.
 
 We evaluated the proposed method using coding and non-coding gene expression profiles of 33 different cancers from TCGA. It significantly outperforms state-of-the-art methods in identifying top coding and non-coding genes.
 
 ## Installation 
-Run the code [here](https://colab.research.google.com/drive/1xEkc_f2weNquAzeNDaxR_5OTwtKozdfN) in google colab.<br/>
+Watch the [video](https://youtu.be/TXQiKe5Axdo) to run the code [here](https://colab.research.google.com/drive/1xEkc_f2weNquAzeNDaxR_5OTwtKozdfN) in google colab.<br/>
 OR<br/>
 To install, use `$ pip install corae`
 
@@ -42,6 +42,11 @@ def main():
     k=10             # number of feature to be selected
     fetureByCoRAE(k, nFeature)
 if __name__== "__main__":
+    df = pd.read_csv("Example-dataset.csv")
+    X = df.iloc[:,1:-1]
+    y = df.iloc[:,-1]
+    X_norm = MinMaxScaler().fit_transform(X)
+    x_train, x_test, y_train, y_test = train_test_split(X_norm, y, test_size=0.25, random_state=31)
     main()
 ```
 
