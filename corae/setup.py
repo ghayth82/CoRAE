@@ -1,4 +1,5 @@
-from setuptools import setup, find_packages
+import setuptools 
+#import setup, find_packages
 
 with open("README.md", "r") as txt:
     full_description = txt.read()
