@@ -42,6 +42,11 @@ def main():
     k=10             # number of feature to be selected
     fetureByCoRAE(k, nFeature)
 if __name__== "__main__":
+    df = pd.read_csv("Example-dataset.csv")
+    X = df.iloc[:,1:-1]
+    y = df.iloc[:,-1]
+    X_norm = MinMaxScaler().fit_transform(X)
+    x_train, x_test, y_train, y_test = train_test_split(X_norm, y, test_size=0.25, random_state=31)
     main()
 ```
 
