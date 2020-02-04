@@ -11,7 +11,7 @@ To install, use `$ pip install corae`
 ## Example
 Below code will run on a sample gene expression dataset and return top 10 gene Id
 ```python 
-from CoRAE import CoRAEFeatureSelector
+from corae import CoRAEFeatureSelector
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split 
