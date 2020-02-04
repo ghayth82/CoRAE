@@ -9,7 +9,7 @@ OR<br/>
 To install, use `$ pip install corae`
 
 ## Example Dataset
-`Example-dataset.csv` contains 1022 genes of 199 cancer patients. Location: `CoRAE/Experiemnts/`
+`Example-dataset.csv` contains 1022 genes of 199 cancer patients. Location: `CoRAE/Experiments/`
 
 ## Example Code
 Below code will run on a sample gene expression dataset and return top 10 gene Id
