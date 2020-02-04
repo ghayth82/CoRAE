@@ -8,7 +8,10 @@ Watch the [video](https://youtu.be/TXQiKe5Axdo) to run the code [here](https://c
 OR<br/>
 To install, use `$ pip install corae`
 
-## Example
+## Example Dataset
+`Example-dataset.csv` contains 1022 genes of 199 cancer patients. Location: `CoRAE/Experiemnts/`
+
+## Example Code
 Below code will run on a sample gene expression dataset and return top 10 gene Id
 ```python 
 from corae import CoRAEFeatureSelector
